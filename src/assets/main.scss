@@ -3,6 +3,7 @@ body {
   padding: 0px;
 }
 
+//Header CSS
 header {
   background-color: lightblue;
   padding: 15px;
@@ -19,4 +20,14 @@ header {
       padding: 15px;
       }
     }
+}
+
+//Intro Video CSS
+.introVideoDiv{
+  width: 100%;
+
+  img{
+    max-width: 100%;
+    background-color: black;
+  }
 }
