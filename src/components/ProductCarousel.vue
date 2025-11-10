@@ -33,6 +33,10 @@ function prev() {
   }
 }
 
+//if (window.matchMedia("(max-width: 768px)").matches) {
+//  console.log("test");
+//}
+
 </script>
 
 

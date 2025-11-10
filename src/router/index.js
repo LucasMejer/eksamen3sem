@@ -22,15 +22,20 @@ const router = createRouter({
       name: 'kontakt',
       component: () => import('../views/KontaktView.vue'),
     },
-        {
+    {
       path: '/brugermanual',
       name: 'brugermanual',
       component: () => import('../views/ManualView.vue'),
     },
-            {
+    {
       path: '/tilmelding',
       name: 'tilmelding',
       component: () => import('../views/ApplyView.vue'),
+    },
+    {
+      path: '/events',
+      name: 'events',
+      component: () => import('../views/EventsView.vue'),
     },
   ],
 })
