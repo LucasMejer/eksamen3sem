@@ -1,9 +1,12 @@
+$black-color: #1D1D1B;
+
 body {
   margin: 0px;
   padding: 0px;
+  background-color: $black-color;
 }
 
-//Header CSS
+//Header SCSS
 header {
   background-color: lightblue;
   padding: 15px;
@@ -22,12 +25,116 @@ header {
     }
 }
 
-//Intro Video CSS
+//Intro Video SCSS
 .introVideoDiv{
-  width: 100%;
 
   img{
-    max-width: 100%;
-    background-color: black;
+    display: block;
+    width: 100%;
+  }
+}
+
+//Product Carousel SCSS
+.carouselHeader{
+  text-align: center;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.productsDiv{
+  display: flex;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: $black-color;
+  align-items: center;
+  button{
+
+    height: 50px;
+    width: 50px;
+    border: none;
+    text-decoration: none;
+  }
+}
+
+.buttonLeft{
+  background: url("/arrow-left.png");
+}
+
+.buttonRight{
+  background: url("/arrow-right.png");
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
+
+.inner {
+  display: flex;
+//  justify-content: center;
+  height: 100%;
+//  align-items: center;
+//  overflow: hidden;
+  transition: transform 0.5s ease; // smooth slide animation
+}
+
+.card {
+//  margin: auto;
+  display: flex;
+  flex: 0 0 calc(100% / 4);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+  p{
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    margin: 7.5px;
+  }
+}
+
+.productTitle{
+  font-weight: bold;
+}
+
+.productArtist{
+  font-weight: bold;
+  color: #8A8F99;
+}
+
+.productPrice{
+  font-weight: bold;
+}
+
+//Kontakt Side
+.kontaktMainDiv{
+  margin-top: 25px;
+  margin-right: 125px;
+  margin-left: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  div{
+    color: white;
+    img{
+      width: 500px;
+      height: 500px;
+    }
+    hr{
+      border-width: 1px;
+      border-style: solid;
+      border-color: #4CB9AC;
+    }
   }
 }

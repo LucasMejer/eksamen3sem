@@ -4,6 +4,6 @@
 
 <template>
   <div class="introVideoDiv">
-    <img src="../../public/introvideotemp.png">
+    <img src="/introvideotemp.png" alt="">
   </div>
 </template>
