@@ -37,6 +37,11 @@ const router = createRouter({
       name: 'events',
       component: () => import('../views/EventsView.vue'),
     },
+       {
+      path: '/afmelding',
+      name: 'afmelding',
+      component: () => import('../views/MisapplyView.vue'),
+    },
   ],
 })
 
