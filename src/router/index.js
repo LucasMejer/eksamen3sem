@@ -22,6 +22,16 @@ const router = createRouter({
       name: 'kontakt',
       component: () => import('../views/KontaktView.vue'),
     },
+        {
+      path: '/brugermanual',
+      name: 'brugermanual',
+      component: () => import('../views/ManualView.vue'),
+    },
+            {
+      path: '/tilmelding',
+      name: 'tilmelding',
+      component: () => import('../views/ApplyView.vue'),
+    },
   ],
 })
 
