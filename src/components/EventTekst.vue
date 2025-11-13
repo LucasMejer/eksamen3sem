@@ -1,4 +1,29 @@
 <script setup>
+import { ref } from "vue";
+
+const mail = ref("");
+
+let erTilmeldt = ref(false);
+
+async function sendMail(){
+    try {
+        const res = await fetch ("https://eksamen3sem-40c2e-default-rtdb.europe-west1.firebasedatabase.app/mails.json", {
+            method: "POST",
+            body: JSON.stringify({
+                mail: mail.value,
+            }),
+        });
+        if(!res.status === 200){
+            throw new Error("Could not register mail");
+        }
+    } catch(error) {
+        console.error(error);
+    }
+
+    mail.value = "";
+    erTilmeldt.value = true;
+};
+
 </script>
 
 <template>
@@ -18,8 +43,11 @@
       Du kan altid afmelde dig nyhedsbrevet nederst i nyhedsbrevet, eller kontakte os for at blive afmeldt.
     </p>
     <div>
-      <input type="text" placeholder="Skriv din e-mail her..." class="emailInput">
-      <button class="nyhedsbrevButton">TILMELD DIG</button>
+      <input type="text" placeholder="Skriv din e-mail her..." class="emailInput" v-model="mail">
+      <button class="nyhedsbrevButton" v-on:click="sendMail">TILMELD DIG</button>
     </div>
+    <p class="nyhedsbrevOverskrift" v-if="erTilmeldt">
+      Du er nu tilmeldt!
+    </p>
   </div>
 </template>
