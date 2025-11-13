@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from "vue"
+import { onMounted, ref } from "vue"
 
 const vinyls = [
   {name:"Imaginal Disk (Indie Exclusive Edition) - 2LP (Hvid Vinyl)", artist:"Magdalena Bay", src:"/magdalenabay.png", key:"vinyl-1", price:"679,95 DKK"},
@@ -14,7 +14,7 @@ const vinyls = [
 const currentIndex = ref(0)
 
 // How many cards visible at once
-const visibleCount = 4
+let visibleCount = 4
 
 function next() {
   if (currentIndex.value < vinyls.length - visibleCount) {
@@ -31,6 +31,24 @@ function prev() {
     currentIndex.value = vinyls.length - visibleCount // jump to end
   }
 }
+
+onMounted(() => {
+  checkScreenSize();
+  const mediaQuery = window.matchMedia("(max-width: 768px)");
+  mediaQuery.addEventListener("change", checkScreenSize);
+})
+
+
+function checkScreenSize() {
+  if (window.matchMedia("(max-width: 768px)").matches){
+    visibleCount = 2
+  }else if(window.matchMedia("(max-width: 1024px) and (min-width: 768px)").matches){
+    visibleCount = 3
+  }else if(window.matchMedia("(min-width: 1024px)").matches){
+    visibleCount = 4
+  }
+}
+
 
 </script>
 

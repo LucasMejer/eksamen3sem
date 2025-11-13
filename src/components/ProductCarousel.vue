@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from "vue"
+import { onMounted, ref } from "vue"
 
 const vinyls = [
   {name:"Magna - LP", artist:"Aphaca", src:"/aphaca.png", key:"vinyl-1", price:"219,95 DKK"},
@@ -15,7 +15,7 @@ const vinyls = [
 const currentIndex = ref(0)
 
 // How many cards visible at once
-const visibleCount = 4
+let visibleCount = 4
 
 function next() {
   if (currentIndex.value < vinyls.length - visibleCount) {
@@ -33,9 +33,22 @@ function prev() {
   }
 }
 
-//if (window.matchMedia("(max-width: 768px)").matches) {
-//  console.log("test");
-//}
+onMounted(() => {
+  checkScreenSize();
+  const mediaQuery = window.matchMedia("(max-width: 768px)");
+  mediaQuery.addEventListener("change", checkScreenSize);
+})
+
+
+function checkScreenSize() {
+  if (window.matchMedia("(max-width: 768px)").matches){
+    visibleCount = 2
+  }else if(window.matchMedia("(max-width: 1024px) and (min-width: 768px)").matches){
+    visibleCount = 3
+  }else if(window.matchMedia("(min-width: 1024px)").matches){
+    visibleCount = 4
+  }
+}
 
 </script>
 

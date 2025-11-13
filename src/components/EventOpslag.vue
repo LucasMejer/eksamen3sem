@@ -1,7 +1,36 @@
 <script setup>
+import { ref } from "vue"
+
+let popupTrigger = ref(false);
+let tilmeldOverskrift = "";
+
+function openPopup(Overskrift){
+  tilmeldOverskrift = Overskrift;
+  popupTrigger.value = true;
+}
+
+function tilmedButton(){
+  popupTrigger.value = false;
+}
+
 </script>
 
 <template>
+
+  <div v-if="popupTrigger">
+    <div class="popup">
+    <div class="popup-inner">
+      <p>
+        Tilmelding til {{ tilmeldOverskrift }}
+      </p>
+      <button class="tilmedButton" v-on:click="tilmedButton">
+        Tilmeld
+      </button>
+    </div>
+  </div>
+</div>
+
+
   <hr class="eventhr" />
   <div class="eventOpslagDiv">
     <img src="/mikeandersen.png" alt="">
@@ -25,9 +54,10 @@
         <h2>2025</h2>
         <h3>KL 16:00</h3>
       </div>
-      <button class="eventButton">PÅMIND MIG</button>
+      <button class="eventButton" v-on:click="openPopup(`Mike Andersen Instore Koncert & Album Release`)">PÅMIND MIG</button>
     </div>
   </div>
+
 
   <hr class="eventhr" />
   <div class="eventOpslagDiv">
@@ -50,7 +80,7 @@
         <h2>2025</h2>
         <h3>KL 15:00</h3>
       </div>
-      <button class="eventButton">PÅMIND MIG</button>
+      <button class="eventButton" v-on:click="openPopup(`Jacob Aksglæde Instore Koncert & Album Release`)">PÅMIND MIG</button>
     </div>
   </div>
 
@@ -77,7 +107,7 @@
         <h2>2025</h2>
         <h3>KL 13 - 16</h3>
       </div>
-      <button class="eventButton">PÅMIND MIG</button>
+      <button class="eventButton" v-on:click="openPopup(`Lagersalg på vestrebro`)">PÅMIND MIG</button>
     </div>
   </div>
 </template>
