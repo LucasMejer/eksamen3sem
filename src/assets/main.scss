@@ -41,7 +41,7 @@ body {
 .navbar__info {
     display: flex;
     justify-content: space-between;
-    background-color: #3BC3B1;
+    background-color: #377C74;
     top: 0;
     left: 0;
     width: 100%;
@@ -52,7 +52,7 @@ body {
     flex-direction: row;
     padding: 7px 10px 5px 10px;
     font-size: 8px;
-    color: #1D1D1B;
+    color: white;
 }
 
 .telefon {
@@ -69,7 +69,7 @@ body {
 }
 
 .some__logos a {
-    color: #1D1D1B;
+    color: white;
     text-decoration: none;
 }
 
@@ -415,7 +415,7 @@ hr{
 }
 
 .nav__links--first a:hover, .nav__links--second a:hover {
-    color: #3BC3B1;
+    color: #377C74;
     text-decoration: underline;
 }
 
@@ -467,44 +467,47 @@ hr{
 }
 
 .intro__section--first {
-    padding: 20px 15px 50px 15px;
+//    padding: 20px 15px 50px 15px;
     line-height: 1.4;
+    background-color: #377C74;
+    width: 100%;
 }
 
 .intro__section--first img {
-    max-width: 100%;
+    max-width: 432px;
     height: auto;
-    border-radius: 5px;
-    margin-bottom: 15px;
+//    border-radius: 5px;
 }
 
 /* INTRO SECTION SECOND */
 
 .intro__section--second {
     color: #FFFFFF;
-    padding: 20px 15px 50px 15px;
+//    padding: 20px 15px 50px 15px;
     line-height: 1.4;
+    background-color: #377C74;
+    width: 100%;
 }
 
 .intro__section--second img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
-    margin-top: 15px;
+//    border-radius: 5px;
+
 }
 
 
 /* FOOTER */
 
 .footer {
-    background-color: #3BC3B1;
-    color: #1D1D1B;
+    background-color: #377C74;
+    color: white;
     padding: 20px 0;
 }
 
 .button__collapsible {
-  background-color: #3BC3B1;
-  color: #1D1D1B;
+  background-color: #377C74;
+  color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -515,7 +518,7 @@ hr{
 }
 
 .active, .button__collapsible:hover {
-  background-color: #3BC3B1;
+  background-color: #377C74;
 }
 
 .footer__content {
@@ -556,7 +559,7 @@ hr{
         left: 0;
         background-color: #1D1D1B;
         border-top: 1px solid;
-        border-color: #3BC3B1;
+        border-color: #377C74;
         margin-top: 15px;
     }
 
@@ -594,7 +597,7 @@ hr{
     }
 
     .footer__buttons .footer__content a {
-        color: #1D1D1B;
+        color: white;
     }
 
     .footer__buttons .footer__some {
@@ -608,7 +611,7 @@ hr{
 @media screen and (min-width: 1024px) {
     .navbar__menu {
        border-top: 1px solid;
-       border-color: #3BC3B1;
+       border-color: #377C74;
     }
 
     .navbar__info .info__text {
@@ -618,7 +621,7 @@ hr{
     .link__sites {
         display: flex;
         justify-content: space-between;
-        color: #1D1D1B;
+        color: white;
     }
 
     .nav__links--first {
@@ -678,8 +681,15 @@ hr{
         padding-right: 70px;
     }
 
-    .intro__section--first, .intro__section--second {
-        margin: 0 150px 0 150px;
+    // INTO SECTIONS
+
+    .intro__section--first {
+      padding: 15px 160px 15px 160px;
+    }
+    
+    .intro__section--second {
+      width: 100%;
+      padding-left: 160px;
     }
 
     .intro__text {
@@ -689,20 +699,18 @@ hr{
     
 
     .intro__section--first h1, .intro__section--second h1 {
-        margin-top: 20px;
         font-size: 48px;
     }
 
-    .intro__section--second {
-        margin-top: 50px;
-    }
-
     .intro__section--second h1 {
-        transform: translateX(530px);
+        margin-left: 625px;
+        transform: translateY(20px);
     }
 
     .intro__section--second p {
-        transform: translateX(100px);
+        margin-left: 200px;
+        width: 400px;
+        transform: translateY(20px);
     }
 
     .intro__section {
@@ -719,12 +727,21 @@ hr{
         height: auto;
         width: 400px;
         float: right;
-        transform: translateY(-200px);
-        transform: translateX(10px);
+        transform: translateY(-80px);
+    }
+
+    .intro__picture--second {
+        height: auto;
+        width: 400px;
+        transform: translateY(-35px);
     }
 
 
     // FOOTER
+
+    .footer {
+      border-top: 2px solid #1D1D1B;
+    }
 
     .footer__content li {
         display: flex;
@@ -732,7 +749,7 @@ hr{
     }
 
     .footer__content li, .footer__contact a :hover{
-        color: #3BC3B1;
+        color: #377C74;
         text-decoration: underline;
     }
 
@@ -741,14 +758,14 @@ hr{
     }
 
     .footer__content li a {
-        color: #1D1D1B;
+        color: white;
         line-height: 1.5;
     }
 
     .footer__content p {
         width: 200px;
         line-height: 1.5;
-        color: #1D1D1B;
+        color: white;
     }
 
     .footer__content  {
@@ -768,7 +785,7 @@ hr{
     }
 
     .footer__contact a {
-        color: #1D1D1B;
+        color: white;
     }
 }
 
@@ -799,7 +816,6 @@ hr{
     background-color: #3A3A3A;
     height: 400px;
     width: 350px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -825,7 +841,7 @@ hr{
 }
 
 .box__container button {
-    background-color: #3BC3B1;
+    background-color: #377C74;
     width: 45%;
     height: 10%;
     margin: 0 0 20px 0;
@@ -850,7 +866,7 @@ hr{
 }
 
 .apply img {
-    width: auto;
+    width: 500px;
     height: 225px;
     padding-right: 15px;
 }

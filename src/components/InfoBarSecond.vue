@@ -5,7 +5,7 @@
     <div class="intro__section--second">
         <h1>ALT I MUSIK</h1>
         <div class="intro__section">
-            <div class="intro__picture">
+            <div class="intro__picture--second">
                 <img src="/public/vinylStoreSortiment.jpg" alt="Moby Disc butik i Odense front billede">
             </div>
             <div class="intro__text">
