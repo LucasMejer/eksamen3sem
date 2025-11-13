@@ -4,8 +4,14 @@ import { ref } from "vue";
 const mail = ref("");
 
 let erTilmeldt = ref(false);
+let tilmeldFejl = ref(false);
 
 async function sendMail(){
+
+  erTilmeldt.value = false;
+  tilmeldFejl.value = false;
+
+  if(mail.value.includes("@")){
     try {
         const res = await fetch ("https://eksamen3sem-40c2e-default-rtdb.europe-west1.firebasedatabase.app/mails.json", {
             method: "POST",
@@ -19,9 +25,12 @@ async function sendMail(){
     } catch(error) {
         console.error(error);
     }
-
     mail.value = "";
     erTilmeldt.value = true;
+  }
+  else{
+    tilmeldFejl.value = true;
+  }
 };
 
 </script>
@@ -48,6 +57,9 @@ async function sendMail(){
     </div>
     <p class="nyhedsbrevOverskrift" v-if="erTilmeldt">
       Du er nu tilmeldt!
+    </p>
+    <p class="nyhedsbrevOverskrift" v-if="tilmeldFejl">
+      Ikke gyldig mail
     </p>
   </div>
 </template>
