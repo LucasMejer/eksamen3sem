@@ -102,7 +102,7 @@ onMounted(() => {
     <nav class="navbar__menu">
         <div class="link__sites">    
             <ul class="nav__links--first">
-                <li><a href="#" class="activated">VINYL</a></li>
+                <li><router-link href="/" class="activated">VINYL</router-link></li>
                 <li><a href="#">CD</a></li>
                 <li><a href="#">FILM</a></li>
                 <li><a href="#">TILBEHØR</a></li>
@@ -111,8 +111,8 @@ onMounted(() => {
 
             <ul class="nav__links--second">
                 <li><a href="#">OM OS</a></li>
-                <li><a href="#">EVENTS</a></li>
-                <li><a href="#">KONTAKT</a></li>
+                <li><a href="/events">EVENTS</a></li>
+                <li><a href="/kontakt">KONTAKT</a></li>
             </ul>
         </div>
 
