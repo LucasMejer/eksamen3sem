@@ -55,25 +55,16 @@ onMounted(() => {
 <body>
     <nav class="navbar__info">
         <div class="info__text">
-            <div class="telefon">
-                <i class="fa-solid fa-phone icon"></i>
-                +45 66 14 41 48
-            </div>
-
-            <div class="email">
-                <i class="fa-solid fa-envelope icon"></i>
-                post@moby-disc.dk
-            </div>
+            <p>Specialforretning for lp'er, cd'er og dvd'er | Fri fragt i Danmark ved køb over 700,-</p>
         </div>
-
-        <div class="some__logos">
-            <div class="instagram">
-                <a href="#" class="fa fa-instagram"></a>
-            </div>
-
-            <div class="facebook">
-                <a href="#" class="fa fa-facebook-f"></a>
-            </div>
+        <div class="info__reviews">
+            <p>4,7</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+            <p><u>365 anmeldelser</u> på Google</p>
         </div>
     </nav>
 
