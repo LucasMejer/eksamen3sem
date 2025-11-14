@@ -98,8 +98,7 @@ body {
 .carouselHeader{
   text-align: center;
   color: white;
-  margin-bottom: 5px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .productsDiv{
@@ -108,21 +107,22 @@ body {
   margin-right: 25px;
   background-color: $black-color;
   align-items: center;
-  button{
-
-    height: 50px;
-    width: 50px;
-    border: none;
-    text-decoration: none;
-  }
 }
 
 .buttonLeft{
   background: url("/arrow-left.png");
+  height: 50px;
+  width: 50px;
+  border: none;
+  text-decoration: none;
 }
 
 .buttonRight{
   background: url("/arrow-right.png");
+  height: 50px;
+  width: 50px;
+  border: none;
+  text-decoration: none;
 }
 
 .carousel {
@@ -160,7 +160,7 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
-    margin: 7.5px;
+    margin: 2.5px;
   }
 }
 
@@ -177,15 +177,30 @@ body {
   font-weight: bold;
 }
 
+.kurvButton{
+  background-color: #F9B333;
+  border: none;
+  text-decoration: none;
+  width: 7.5vw;
+  height: 35px;
+  margin-top: 5px;
+}
+
 @media only screen and (max-width: 768px){
   .card{
     flex: 0 0 calc(100% / 2);
+  }
+  .kurvButton{
+    width: 17.5vw;
   }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px){
   .card{
     flex: 0 0 calc(100% / 3);
+  }
+  .kurvButton{
+    width: 12.5vw;
   }
 }
 
@@ -240,7 +255,7 @@ hr{
 }
 
 .eventDatoDiv{
-  width: 10vw;
+  width: 15vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,6 +264,7 @@ hr{
 }
 
 .datoInformation{
+    width: 10vw;
     border-style: solid;
     border-color: #F9B333;
     aspect-ratio: 1 / 1;
@@ -257,7 +273,9 @@ hr{
     justify-content: space-between;
     align-items: center;
     h2{
-      margin: 5px;
+      text-align: center;
+      padding: 0px;
+      margin: 0px;
       color: #F9B333;
     }
     h3{
@@ -387,7 +405,7 @@ hr{
   }
 
   .datoInformation{
-    width: 20vw;
+    width: 25vw;
   }
 
   .eventButton{
@@ -532,7 +550,7 @@ hr{
 }
 
 .intro__section--second img {
-    max-width: 100%;
+    max-width: 432px;
     height: auto;
 //    border-radius: 5px;
 
@@ -728,10 +746,9 @@ hr{
     .intro__section--first {
       padding: 15px 160px 15px 160px;
     }
-    
+
     .intro__section--second {
-      width: 100%;
-      padding-left: 160px;
+      padding: 15px 160px 15px 160px;
     }
 
     .intro__text {
@@ -745,37 +762,36 @@ hr{
     }
 
     .intro__section--second h1 {
-        margin-left: 625px;
-        transform: translateY(20px);
     }
 
     .intro__section--second p {
-        margin-left: 200px;
         width: 400px;
-        transform: translateY(20px);
     }
 
     .intro__section {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .intro__text p {
         margin-bottom: 10px;
     }
 
+    .intro__first{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     .intro__picture {
-        height: auto;
-        width: 400px;
-        float: right;
-        transform: translateY(-80px);
+        display: flex;
     }
 
     .intro__picture--second {
-        height: auto;
-        width: 400px;
-        transform: translateY(-35px);
+        display: flex;
     }
 
 

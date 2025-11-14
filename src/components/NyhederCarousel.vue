@@ -64,6 +64,7 @@ function checkScreenSize() {
           <p class="productTitle"> {{ vinyl.name }} </p>
           <p class="productArtist"> {{ vinyl.artist }} </p>
           <p class="productPrice"> {{ vinyl.price }} </p>
+          <button class="kurvButton">LÆG I KURV</button>
         </div>
       </div>
     </div>
