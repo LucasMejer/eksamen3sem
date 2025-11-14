@@ -55,26 +55,8 @@ body {
     color: white;
 }
 
-.telefon {
-    padding: 0 10px 0 0;
-}
-
-.some__logos {
-    display: flex;
-    flex-direction: row;
-    padding: 7px 10px 5px 10px;
-    font-size: 11px;
-    transform: translateX(10px);
-    gap: 2px;
-}
-
-.some__logos a {
-    color: white;
-    text-decoration: none;
-}
-
-.instagram {
-    padding: 0 5px 0 0;
+.info__reviews i {
+    color: #F9B333;
 }
 
 /* MEDIA QUERY NAVBAR FIRST */
@@ -529,7 +511,7 @@ hr{
 .intro__section--first {
 //    padding: 20px 15px 50px 15px;
     line-height: 1.4;
-    background-color: #377C74;
+    background-color: #3A3A3A;
     width: 100%;
 }
 
@@ -545,7 +527,7 @@ hr{
     color: #FFFFFF;
 //    padding: 20px 15px 50px 15px;
     line-height: 1.4;
-    background-color: #377C74;
+    background-color: #3A3A3A;
     width: 100%;
 }
 
@@ -678,6 +660,19 @@ hr{
         font-size: 15px;
     }
 
+    .info__reviews {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        padding-right: 70px;
+        gap: 2px;
+    }
+
+    .navbar__info div {
+      display: flex;
+      justify-content: space-between;
+    }
+
     .link__sites {
         display: flex;
         justify-content: space-between;
@@ -702,8 +697,9 @@ hr{
         list-style-type: none;
         font-size:  16px;
         gap: 65px;
+        transform: translateX(100px);
         padding: 12px 0 12px 0;
-        transform: translateX(65px);
+
     }
 
     .nav__links--first a {
@@ -718,15 +714,12 @@ hr{
 
     .shop__logos {
         font-size: 26px;
-        float: right;
-        transform: translateY(-80px);
-        padding-right: 50px;
+        padding-right: 70px;
     }
 
     .navbar__info {
         height: 40px;
     }
-
 
     .info__text {
         font-size: 18px;
@@ -735,20 +728,24 @@ hr{
         padding-left: 70px;
     }
 
-    .some__logos {
-        font-size: 26px;
-        gap: 10px;
-        padding-right: 70px;
-    }
-
-    // INTO SECTIONS
+    // INTRO SECTIONS
 
     .intro__section--first {
       padding: 15px 160px 15px 160px;
+      overflow: hidden;
     }
 
     .intro__section--second {
+<<<<<<< Updated upstream
       padding: 15px 160px 15px 160px;
+=======
+      width: 100%;
+      padding-left: 160px;
+      overflow: hidden;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     }
 
     .intro__text {
@@ -794,13 +791,51 @@ hr{
         display: flex;
     }
 
-
-    // FOOTER
-
-    .footer {
-      border-top: 2px solid #1D1D1B;
+    .watermark__first {
+        position: absolute;
+        top: 183%;
+        left: -200px;
+        width: 70%;
+        opacity: 0.02;
+        z-index: 1;
+        pointer-events: none;
     }
 
+    .watermark__second {
+        position: absolute;
+        top: 183%;
+        left: -200px;
+        width: 40%;
+        opacity: 0.02;
+        z-index: 1;
+        pointer-events: none; 
+    }
+
+<<<<<<< Updated upstream
+=======
+    .watermark__first {
+        position: absolute;
+        top: 183%;
+        left: -200px;
+        width: 70%;
+        opacity: 0.02;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .watermark__second {
+        position: absolute;
+        top: 183%;
+        left: -200px;
+        width: 40%;
+        opacity: 0.02;
+        z-index: 1;
+        pointer-events: none; 
+    }
+
+>>>>>>> Stashed changes
+
+// FOOTER
     .footer__content li {
         display: flex;
         flex-direction: column;
