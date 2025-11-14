@@ -515,7 +515,7 @@ hr{
     width: 100%;
 }
 
-.intro__section--first img {
+.intro__picture img {
     max-width: 432px;
     height: auto;
 //    border-radius: 5px;
@@ -747,12 +747,8 @@ hr{
         margin: 20px 0 20px 0;
     }
 
-
     .intro__section--first h1, .intro__section--second h1 {
         font-size: 48px;
-    }
-
-    .intro__section--second h1 {
     }
 
     .intro__section--second p {
@@ -787,44 +783,23 @@ hr{
 
     .watermark__first {
         position: absolute;
-        top: 183%;
+        top: 177%;
         left: -200px;
-        width: 70%;
+        width: 28.5%;
         opacity: 0.02;
         z-index: 1;
         pointer-events: none;
     }
 
     .watermark__second {
-        position: absolute;
-        top: 183%;
-        left: -200px;
-        width: 40%;
+      position: absolute;
+        top: 289%;
+        left: 1250px;
+        width: 400px;
         opacity: 0.02;
         z-index: 1;
         pointer-events: none;
     }
-
-    .watermark__first {
-        position: absolute;
-        top: 183%;
-        left: -200px;
-        width: 70%;
-        opacity: 0.02;
-        z-index: 1;
-        pointer-events: none;
-    }
-
-    .watermark__second {
-        position: absolute;
-        top: 183%;
-        left: -200px;
-        width: 40%;
-        opacity: 0.02;
-        z-index: 1;
-        pointer-events: none;
-    }
-
 
 // FOOTER
     .footer__content li {
