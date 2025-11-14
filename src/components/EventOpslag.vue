@@ -3,13 +3,17 @@ import { ref } from "vue"
 
 let popupTrigger = ref(false);
 let tilmeldOverskrift = "";
+let eventList = [];
+let currentEvent = "";
 
-function openPopup(Overskrift){
+function openPopup(Overskrift, EventIndex){
+  currentEvent = EventIndex;
   tilmeldOverskrift = Overskrift;
   popupTrigger.value = true;
 }
 
 function tilmedButton(){
+  alert(eventList[currentEvent]);
   popupTrigger.value = false;
 }
 
@@ -54,7 +58,7 @@ function tilmedButton(){
         <h2>2025</h2>
         <h3>KL 16:00</h3>
       </div>
-      <button class="eventButton" v-on:click="openPopup(`Mike Andersen Instore Koncert & Album Release`)">PÅMIND MIG</button>
+      <button class="eventButton" v-on:click="openPopup(`Mike Andersen Instore Koncert & Album Release`, 0)">PÅMIND MIG</button>
     </div>
   </div>
 
