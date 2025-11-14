@@ -3,14 +3,7 @@
 
 <template>
     <div class="intro__section--second">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
         <img class="watermark__second" src="/public/mobydisc_fullwhite_logo_rgb.png" alt="moby disc watermark til baggrund af introsektioner">
-        <h1>ALT I MUSIK</h1>
->>>>>>> Stashed changes
         <div class="intro__section">
             <div class="intro__picture--second">
                 <img src="/vinylStoreSortiment.jpg" alt="Moby Disc butik i Odense front billede">
