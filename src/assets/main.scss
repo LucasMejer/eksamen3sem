@@ -742,6 +742,9 @@ hr{
       width: 100%;
       padding-left: 160px;
       overflow: hidden;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
 
@@ -808,6 +811,29 @@ hr{
         pointer-events: none; 
     }
 
+<<<<<<< Updated upstream
+=======
+    .watermark__first {
+        position: absolute;
+        top: 183%;
+        left: -200px;
+        width: 70%;
+        opacity: 0.02;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .watermark__second {
+        position: absolute;
+        top: 183%;
+        left: -200px;
+        width: 40%;
+        opacity: 0.02;
+        z-index: 1;
+        pointer-events: none; 
+    }
+
+>>>>>>> Stashed changes
 
 // FOOTER
     .footer__content li {
