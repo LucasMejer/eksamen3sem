@@ -1,4 +1,4 @@
-$black-color: #1D1D1B;
+@import "colors";
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Display:wght@400..800&display=swap');
 
@@ -10,7 +10,7 @@ $black-color: #1D1D1B;
 body {
   margin: 0px;
   padding: 0px;
-  background-color: $black-color;
+  background-color: $color-background;
 }
 
 //Header SCSS
@@ -30,10 +30,6 @@ header {
 
 html, body {
     overflow-x: hidden;
-}
-
-body {
-    background-color: #1D1D1B;
 }
 
 /* NAVBAR FIRST */
@@ -87,7 +83,7 @@ body {
   display: flex;
   margin-left: 25px;
   margin-right: 25px;
-  background-color: $black-color;
+  background-color: $color-black;
   align-items: center;
 }
 
@@ -268,7 +264,7 @@ hr{
     h3{
       margin: 0px;
       background-color: #F9B333;
-      color: $black-color;
+      color: $color-black;
       width: 100%;
     }
     margin-bottom: 25px;
@@ -277,7 +273,16 @@ hr{
 .eventButton{
   width: 10vw;
   background-color: #F9B333;
-  color: $black-color;
+  color: $color-black;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.eventButtonRed{
+  width: 10vw;
+  background-color: #ba4d5b;
+  color: white;
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -313,6 +318,10 @@ hr{
   color: #F9B333;
 }
 
+.nyhedsbrevFejl{
+  color: #ba4d5b;
+}
+
 .nyhedsbrevTekst{
   width: 40vw;
   margin: 5px 0 5px 0;
@@ -321,7 +330,7 @@ hr{
 .emailInput{
   border-color: white;
   border-style: solid;
-  background-color: $black-color;
+  background-color: $color-black;
   color: white;
   width: 20vw;
   height: 25px;
@@ -332,7 +341,7 @@ hr{
 }
 
 .nyhedsbrevButton{
-  color: $black-color;
+  color: $color-black;
   background-color: #F9B333;
   border-style: solid;
   border-color: #F9B333;
@@ -358,16 +367,19 @@ hr{
 }
 
 .popup-inner{
-  background: $black-color;
+  background: $color-black;
   padding: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-color: #F9B333;
+  border-style: solid;
+  border-width: 5px;
 }
 
 .tilmeldButton{
-  color: $black-color;
+  color: $color-black;
   background-color: #F9B333;
   border-style: solid;
   border-color: #F9B333;
@@ -375,6 +387,27 @@ hr{
   margin-right: 15px;
   height: 31px;
   width: 150px;
+}
+
+.tilmeldButtonRed{
+  color: white;
+  background-color: #ba4d5b;
+  border-style: solid;
+  border-color: #ba4d5b;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 31px;
+  width: 150px;
+}
+
+.popupImage{
+  width: 20vw;
+  aspect-ratio: 1 / 1;
+  margin: 25px;
+}
+
+.popupTekst{
+  margin: 15px;
 }
 
 @media only screen and (max-width: 768px){
@@ -412,6 +445,17 @@ hr{
     margin-right: 25px;
    margin-left: 25px;
   }
+
+  .popupImage{
+  width: 50vw;
+  aspect-ratio: 1 / 1;
+  margin: 15px;
+  }
+
+  .popupTekst{
+    margin: 5px;
+  }
+
 }
 /* NAVBAR SECOND */
 
