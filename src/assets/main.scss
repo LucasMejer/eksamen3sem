@@ -10,7 +10,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: colors.$color-background;
+  background-color: colors.$background;
 }
 
 //Header SCSS
@@ -83,7 +83,7 @@ html, body {
   display: flex;
   margin-left: 25px;
   margin-right: 25px;
-  background-color: colors.$color-black;
+  background-color: colors.$black;
   align-items: center;
 }
 
@@ -264,7 +264,7 @@ hr{
     h3{
       margin: 0px;
       background-color: #F9B333;
-      color: colors.$color-black;
+      color: colors.$black;
       width: 100%;
     }
     margin-bottom: 25px;
@@ -273,7 +273,7 @@ hr{
 .eventButton{
   width: 10vw;
   background-color: #F9B333;
-  color: colors.$color-black;
+  color: colors.$black;
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -330,7 +330,7 @@ hr{
 .emailInput{
   border-color: white;
   border-style: solid;
-  background-color: colors.$color-black;
+  background-color: colors.$black;
   color: white;
   width: 20vw;
   height: 25px;
@@ -341,7 +341,7 @@ hr{
 }
 
 .nyhedsbrevButton{
-  color: colors.$color-black;
+  color: colors.$black;
   background-color: #F9B333;
   border-style: solid;
   border-color: #F9B333;
@@ -367,7 +367,7 @@ hr{
 }
 
 .popup-inner{
-  background: colors.$color-black;
+  background: colors.$black;
   padding: 64px;
   display: flex;
   align-items: center;
@@ -379,7 +379,7 @@ hr{
 }
 
 .tilmeldButton{
-  color: colors.$color-black;
+  color: colors.$black;
   background-color: #F9B333;
   border-style: solid;
   border-color: #F9B333;
