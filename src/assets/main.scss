@@ -192,6 +192,7 @@ body {
   margin-top: 25px;
   margin-right: 100px;
   margin-left: 100px;
+  margin-bottom: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -202,6 +203,10 @@ body {
       height: 500px;
     }
   }
+}
+
+.kontaktMainDiv h2 {
+  margin-top: 10px;
 }
 
 hr{
@@ -296,16 +301,21 @@ hr{
   margin-right: 100px;
 }
 
-.eventOverskrift{
-  text-align: center;
+.eventIntroTekstDiv h1 {
+  margin: 25px 0 5px 0;
+}
+.eventIntroTekstDiv h3 {
+  margin-bottom: 25px;
 }
 
 .nyhedsbrevOverskrift{
+  font-size: 24px;
   color: #F9B333;
 }
 
 .nyhedsbrevTekst{
   width: 40vw;
+  margin: 5px 0 5px 0;
 }
 
 .emailInput{
@@ -580,8 +590,7 @@ hr{
   .footer__text {
     display: flex;
     justify-content: left;
-    gap: 20px;
-    transform: translateX(135px);
+    transform: translateX(110px);
   }
 }
 

@@ -1,6 +1,7 @@
 <script setup>
 import EventOpslag from '@/components/EventOpslag.vue';
 import EventTekst from '@/components/EventTekst.vue';
+import FooterBar from '@/components/FooterBar.vue';
 import TheHeader from '@/components/TheHeader.vue';
 </script>
 
@@ -9,5 +10,6 @@ import TheHeader from '@/components/TheHeader.vue';
     <the-header />
     <EventTekst />
     <EventOpslag />
+    <FooterBar />
   </main>
 </template>

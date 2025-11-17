@@ -10,7 +10,8 @@
       <p>CVR nr. 33809530</p>
       <hr>
       <h2>Odense</h2>
-      <p>Skt. Knuds Kirkestræde 2A, 5000 Odense C</p>
+      <p>Skt. Knuds Kirkestræde 2A</p>
+      <p>5000 Odense C</p>
       <p>66 14 41 48</p>
       <br>
       <h3>Åbningstider:</h3>
@@ -22,7 +23,7 @@
       <h2>Vejle</h2>
       <p>Nørrebrogade 5C</p>
       <p>7100 Vejle</p>
-      <p>tlf xxxxxxxx</p>
+      <p>66 14 41 48</p>
       <br>
       <h3>Åbningstider:</h3>
       <p>Mandag-torsdag 10 - 17:30</p>
