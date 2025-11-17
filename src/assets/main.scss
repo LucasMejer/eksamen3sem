@@ -398,6 +398,11 @@ hr{
 
   .datoInformation{
     width: 25vw;
+    margin-top: 20px;
+  }
+
+  .eventOpslagDiv h1 {
+    margin-top: 10px;
   }
 
   .eventButton{
@@ -410,7 +415,9 @@ hr{
 
   .eventIntroTekstDiv{
     margin-right: 25px;
-   margin-left: 25px;
+    margin-left: 25px;
+    display: flex;
+    align-content: center;
   }
 }
 /* NAVBAR SECOND */
@@ -604,23 +611,55 @@ hr{
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 90px;
         left: 0;
         background-color: #1D1D1B;
         border-top: 1px solid;
         border-color: #377C74;
-        margin-top: 15px;
+        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
     }
 
-    .nav__links--first.active {
+    .intro__picture, .intro__picture--second {
+      display: flex;
+      justify-content: center;
+    }
+
+    .intro__text {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .intro__first p, .intro__section p {
+      margin-bottom: 10px;
+    }
+
+    .intro__first img, .intro__section img {
+      margin-top: 10px;
+    }
+
+    .nav__links--first.active, .nav__links--second.active{
         display: flex;
         z-index: 99;
     }
 
-    .nav__links--first li {
+    .nav__links--first li, .nav__links--second li {
         margin: 10px 0;
         text-align: center;
     }
+
+    .nav__links--first.active,
+    .nav__links--second.active {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__links--second.active {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
 
     .menu__toggle {
         display: flex;
@@ -721,7 +760,7 @@ hr{
         font-size: 16px;
         gap: 65px;
         padding: 12px 0 12px 30px;
-        transform: translateX(50px);
+        transform: translateX(120px);
     }
 
     .nav__links--second {
@@ -731,7 +770,7 @@ hr{
         list-style-type: none;
         font-size:  16px;
         gap: 65px;
-        padding: 12px 75px 12px 0;
+        padding: 12px 0 12px 0;
 
     }
 
@@ -806,15 +845,7 @@ hr{
       justify-content: space-between;
       align-items: center;
     }
-
-    .intro__picture {
-        display: flex;
-    }
-
-    .intro__picture--second {
-        display: flex;
-    }
-
+    
     .watermark__first {
         position: absolute;
         top: 177%;

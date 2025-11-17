@@ -130,10 +130,10 @@ async function afmeldButton(){
         et personligt og kompromisløst værk, der kredser om livet på den anden side af en skilsmisse.
         Albummet er skabt i tæt samarbejde med producer Christian Ki, og sammen har de kastet alle genre-regler over bord for at finde en lyd,
         der er lige så fri som den er nærværende.
-         </p>
-        <p>
-          Gratis entré, Gratis øl/vand, Mulighed for køb af signeret LP/CD,  Oplagt fredagsbar!
-        </p>
+      </p>
+      <p>
+        Gratis entré, Gratis øl/vand, Mulighed for køb af signeret LP/CD,  Oplagt fredagsbar!
+      </p>
     </div>
     <div class="eventDatoDiv">
       <div class="datoInformation">

@@ -6,7 +6,7 @@
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__buttons">
-                <button type="button" class="button__collapsible">OM MOBY DISC</button>
+                <button type="button" class="button__collapsible active">OM MOBY DISC</button>
                 <div class="footer__content">
                     <p>Moby-Disc har i 30 år været Fyns førende leverandør af musik på CD, Vinyl og alle tænkelige formater. Find vores butikker i Odense og Vejle, eller køb her i vores webshop</p>
                 </div>
