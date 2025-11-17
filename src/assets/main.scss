@@ -1,4 +1,4 @@
-@import "colors";
+@use "colors";
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Display:wght@400..800&display=swap');
 
@@ -10,7 +10,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: $color-background;
+  background-color: colors.$color-background;
 }
 
 //Header SCSS
@@ -83,7 +83,7 @@ html, body {
   display: flex;
   margin-left: 25px;
   margin-right: 25px;
-  background-color: $color-black;
+  background-color: colors.$color-black;
   align-items: center;
 }
 
@@ -264,7 +264,7 @@ hr{
     h3{
       margin: 0px;
       background-color: #F9B333;
-      color: $color-black;
+      color: colors.$color-black;
       width: 100%;
     }
     margin-bottom: 25px;
@@ -273,7 +273,7 @@ hr{
 .eventButton{
   width: 10vw;
   background-color: #F9B333;
-  color: $color-black;
+  color: colors.$color-black;
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -330,7 +330,7 @@ hr{
 .emailInput{
   border-color: white;
   border-style: solid;
-  background-color: $color-black;
+  background-color: colors.$color-black;
   color: white;
   width: 20vw;
   height: 25px;
@@ -341,7 +341,7 @@ hr{
 }
 
 .nyhedsbrevButton{
-  color: $color-black;
+  color: colors.$color-black;
   background-color: #F9B333;
   border-style: solid;
   border-color: #F9B333;
@@ -367,7 +367,7 @@ hr{
 }
 
 .popup-inner{
-  background: $color-black;
+  background: colors.$color-black;
   padding: 64px;
   display: flex;
   align-items: center;
@@ -379,7 +379,7 @@ hr{
 }
 
 .tilmeldButton{
-  color: $color-black;
+  color: colors.$color-black;
   background-color: #F9B333;
   border-style: solid;
   border-color: #F9B333;

@@ -79,7 +79,7 @@ onMounted(() => {
         </div>
 
         <div class="name__moby">
-            <img src="/public/mobydisc_logotype_fullcolor_rgb.png" alt="logo til forside øverst nav bar moby disc">
+            <img src="/mobydisc_logotype_fullcolor_rgb.png" alt="logo til forside øverst nav bar moby disc">
         </div>
 
         <div class="shop__logos">
@@ -98,7 +98,7 @@ onMounted(() => {
 <!-- HAMBURGER MENU -->
 
     <nav class="navbar__menu">
-        <div class="link__sites">    
+        <div class="link__sites">
             <ul class="nav__links--first">
                 <li><router-link to="/" class="router-link-active">VINYL</router-link></li>
                 <li><router-link to="/cd">CD</router-link></li>
@@ -121,5 +121,5 @@ onMounted(() => {
 
 
 </body>
- 
+
 </template>

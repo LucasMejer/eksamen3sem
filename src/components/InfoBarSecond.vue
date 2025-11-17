@@ -3,7 +3,7 @@
 
 <template>
     <div class="intro__section--second">
-        <img class="watermark__second" src="/public/mobydisc_fullwhite_logo_rgb.png" alt="moby disc watermark til baggrund af introsektioner">
+        <img class="watermark__second" src="/mobydisc_fullwhite_logo_rgb.png" alt="moby disc watermark til baggrund af introsektioner">
         <div class="intro__section">
             <div class="intro__picture--second">
                 <img src="/vinylStoreSortiment.jpg" alt="Moby Disc butik i Odense front billede">
