@@ -71,6 +71,13 @@ onMounted(() => {
 <!-- LOGO NAV BAR WITH SHOP -->
 
     <nav class="navbar__name">
+
+        <div class="menu__toggle">
+            <span class="menu__bar"></span>
+            <span class="menu__bar"></span>
+            <span class="menu__bar"></span>
+        </div>
+
         <div class="name__moby">
             <img src="/public/mobydisc_logotype_fullcolor_rgb.png" alt="logo til forside øverst nav bar moby disc">
         </div>
@@ -105,12 +112,6 @@ onMounted(() => {
                 <li><router-link to="/events">EVENTS</router-link></li>
                 <li><router-link to="/kontakt">KONTAKT</router-link></li>
             </ul>
-        </div>
-
-        <div class="menu__toggle">
-            <span class="menu__bar"></span>
-            <span class="menu__bar"></span>
-            <span class="menu__bar"></span>
         </div>
     </nav>
 

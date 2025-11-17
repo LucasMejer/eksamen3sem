@@ -428,7 +428,6 @@ hr{
 .shop__logos {
     display: flex;
     float: right;
-    transform: translateY(-55px);
     font-size: 18px;
     gap: 10px;
 }
@@ -445,7 +444,6 @@ hr{
     flex-direction: column;
     cursor: pointer;
     float: left;
-    transform: translateY(-70px);
     padding-left: 10px;
 }
 
@@ -619,6 +617,23 @@ hr{
         display: flex;
     }
 
+    .navbar__name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu__toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+    }
+    .menu__bar {
+        width: 24px;
+        height: 2px;
+        background: white;
+    }
+
     .name__moby img {
         max-width: 50%;
         height: auto;
@@ -626,6 +641,12 @@ hr{
 
     .button__collapsible {
         font-weight: bold;
+    }
+
+    .navbar__name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     }
 
     .footer__buttons .footer__content p {
@@ -644,6 +665,10 @@ hr{
 
     .footer__buttons .footer__some {
         margin-top: 10px;
+    }
+
+    .watermark__first, .watermark__second {
+      display: none;
     }
 }
 
@@ -697,8 +722,7 @@ hr{
         list-style-type: none;
         font-size:  16px;
         gap: 65px;
-        transform: translateX(100px);
-        padding: 12px 0 12px 0;
+        padding: 12px 75px 12px 0;
 
     }
 
@@ -715,6 +739,7 @@ hr{
     .shop__logos {
         font-size: 26px;
         padding-right: 70px;
+        transform: translateY(-90px)
     }
 
     .navbar__info {
@@ -793,9 +818,9 @@ hr{
 
     .watermark__second {
       position: absolute;
-        top: 289%;
+        top: 289.5%;
         left: 1250px;
-        width: 400px;
+        width: 600px;
         opacity: 0.02;
         z-index: 1;
         pointer-events: none;
