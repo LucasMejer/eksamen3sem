@@ -4,11 +4,12 @@ import { ref } from "vue"
 let popupTrigger = ref(false);
 let afmeldTrigger = ref(false);
 let tilmeldOverskrift = "";
+let eventImg = ref("");
 let eventList = [
   {
     "EventNavn": "Mike Andersen Instore Koncert & Album Release",
     "EventID" : "01",
-    "EventActive" : localStorage.getItem("01") === "true" ? true : false
+    "EventActive" : localStorage.getItem("01") === "true" ? true : false,
   },
   {
     "EventNavn": "Jacob Aksglæde Instore Koncert & Album Release",
@@ -24,9 +25,10 @@ let eventList = [
 let currentEvent = "";
 
 //Tilmeld Funktioner
-function openPopup(Overskrift, EventIndex){
+function openPopup(Overskrift, EventIndex, Img){
   currentEvent = EventIndex;
   tilmeldOverskrift = Overskrift;
+  eventImg.value = Img;
   popupTrigger.value = true;
 }
 
@@ -56,9 +58,10 @@ async function tilmeldButton(){
 }
 
 //Afmeld Funktioner
-function afmeldPopup(Overskrift, EventIndex){
+function afmeldPopup(Overskrift, EventIndex, Img){
   currentEvent = EventIndex;
   tilmeldOverskrift = Overskrift;
+  eventImg.value = Img;
   afmeldTrigger.value = true;
 }
 
@@ -87,6 +90,12 @@ async function afmeldButton(){
   }
 }
 
+//Annuller Button
+function annullerButton(){
+  popupTrigger.value = false;
+  afmeldTrigger.value = false;
+}
+
 
 </script>
 
@@ -95,12 +104,21 @@ async function afmeldButton(){
   <div v-if="popupTrigger">
     <div class="popup">
     <div class="popup-inner">
+      <img v-bind:src="eventImg" class="popupImage">
       <p>
-        Tilmelding til {{ tilmeldOverskrift }}
+        Vil du tilmelde dig
       </p>
-      <button class="tilmeldButton" v-on:click="tilmeldButton">
+      <p class="popupTekst">
+        {{ tilmeldOverskrift }}
+      </p>
+      <div>
+        <button class="tilmeldButton" v-on:click="annullerButton">
+        Annuller
+        </button>
+        <button class="tilmeldButton" v-on:click="tilmeldButton">
         Tilmeld
-      </button>
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -108,12 +126,21 @@ async function afmeldButton(){
 <div v-if="afmeldTrigger">
     <div class="popup">
     <div class="popup-inner">
+      <img v-bind:src="eventImg" class="popupImage">
       <p>
-        Afmelding af {{ tilmeldOverskrift }}
+        Er du sikker på du vil afmelde dig
       </p>
-      <button class="tilmeldButton" v-on:click="afmeldButton">
+      <p class="popupTekst">
+        {{ tilmeldOverskrift }}
+      </p>
+      <div>
+        <button class="tilmeldButton" v-on:click="annullerButton">
+        Annuller
+        </button>
+        <button class="tilmeldButtonRed" v-on:click="afmeldButton">
         Afmeld
       </button>
+      </div>
     </div>
   </div>
 </div>
@@ -142,8 +169,8 @@ async function afmeldButton(){
         <h2>2025</h2>
         <h3>KL 16:00</h3>
       </div>
-      <button v-if="eventList[0].EventActive == false" class="eventButton" v-on:click="openPopup(`Mike Andersen Instore Koncert & Album Release`, 0)">PÅMIND MIG</button>
-      <button v-if="eventList[0].EventActive == true" class="eventButton" v-on:click="afmeldPopup(`Mike Andersen Instore Koncert & Album Release`, 0)">AFMELD</button>
+      <button v-if="eventList[0].EventActive == false" class="eventButton" v-on:click="openPopup(`Mike Andersen Instore Koncert & Album Release`, 0, `/mikeandersen.png`)">TILMELD DIG</button>
+      <button v-if="eventList[0].EventActive == true" class="eventButtonRed" v-on:click="afmeldPopup(`Mike Andersen Instore Koncert & Album Release`, 0, `/mikeandersen.png`)">AFMELD</button>
     </div>
   </div>
 
@@ -169,8 +196,8 @@ async function afmeldButton(){
         <h2>2025</h2>
         <h3>KL 15:00</h3>
       </div>
-      <button v-if="eventList[1].EventActive == false" class="eventButton" v-on:click="openPopup(`Jacob Aksglæde Instore Koncert & Album Release`, 1)">PÅMIND MIG</button>
-      <button v-if="eventList[1].EventActive == true" class="eventButton" v-on:click="afmeldPopup(`Jacob Aksglæde Instore Koncert & Album Release`, 1)">AFMELD</button>
+      <button v-if="eventList[1].EventActive == false" class="eventButton" v-on:click="openPopup(`Jacob Aksglæde Instore Koncert & Album Release`, 1, `/jacobaksglaede.png`)">TILMELD DIG</button>
+      <button v-if="eventList[1].EventActive == true" class="eventButtonRed" v-on:click="afmeldPopup(`Jacob Aksglæde Instore Koncert & Album Release`, 1, `/jacobaksglaede.png`)">AFMELD</button>
       </div>
   </div>
 
@@ -197,8 +224,8 @@ async function afmeldButton(){
         <h2>2025</h2>
         <h3>KL 13 - 16</h3>
       </div>
-      <button v-if="eventList[2].EventActive == false" class="eventButton" v-on:click="openPopup(`Lagersalg på vestrebro`, 2)">PÅMIND MIG</button>
-      <button v-if="eventList[2].EventActive == true" class="eventButton" v-on:click="afmeldPopup(`Lagersalg på vestrebro`, 2)">AFMELD</button>
+      <button v-if="eventList[2].EventActive == false" class="eventButton" v-on:click="openPopup(`Lagersalg på vestrebro`, 2, `/lagersalg.png`)">TILMELD DIG</button>
+      <button v-if="eventList[2].EventActive == true" class="eventButtonRed" v-on:click="afmeldPopup(`Lagersalg på vestrebro`, 2, `/lagersalg.png`)">AFMELD</button>
     </div>
   </div>
 </template>

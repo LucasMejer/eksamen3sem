@@ -58,7 +58,7 @@ async function sendMail(){
     <p class="nyhedsbrevOverskrift" v-if="erTilmeldt">
       Du er nu tilmeldt!
     </p>
-    <p class="nyhedsbrevOverskrift" v-if="tilmeldFejl">
+    <p class="nyhedsbrevFejl" v-if="tilmeldFejl">
       Ikke gyldig mail
     </p>
   </div>
