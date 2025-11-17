@@ -2,20 +2,91 @@
 import { ref } from "vue"
 
 let popupTrigger = ref(false);
+let afmeldTrigger = ref(false);
 let tilmeldOverskrift = "";
-let eventList = [];
+let eventList = [
+  {
+    "EventNavn": "Mike Andersen Instore Koncert & Album Release",
+    "EventID" : "01",
+    "EventActive" : localStorage.getItem("01") === "true" ? true : false
+  },
+  {
+    "EventNavn": "Jacob Aksglæde Instore Koncert & Album Release",
+    "EventID" : "02",
+    "EventActive" : localStorage.getItem("02") === "true" ? true : false
+  },
+  {
+    "EventNavn": "Lagersalg på vestrebro",
+    "EventID" : "03",
+    "EventActive" : localStorage.getItem("03") === "true" ? true : false
+  }
+];
 let currentEvent = "";
 
+//Tilmeld Funktioner
 function openPopup(Overskrift, EventIndex){
   currentEvent = EventIndex;
   tilmeldOverskrift = Overskrift;
   popupTrigger.value = true;
 }
 
-function tilmedButton(){
-  alert(eventList[currentEvent]);
+async function tilmeldButton(){
+  eventList[currentEvent].EventActive = true;
+  localStorage.setItem(`${eventList[currentEvent].EventID}`, `${eventList[currentEvent].EventActive}`);
   popupTrigger.value = false;
+  try {
+    // 1. Get current value
+      const getRes = await fetch(`https://eksamen3sem-40c2e-default-rtdb.europe-west1.firebasedatabase.app/event${eventList[currentEvent].EventID}/tilmeldinger.json`);
+      let currentValue = await getRes.json(); // current number
+      if (!currentValue) currentValue = 0;
+
+      // 2. Increment
+      const newValue = currentValue + 1;
+
+      // 3. Write it back
+      const res = await fetch(`https://eksamen3sem-40c2e-default-rtdb.europe-west1.firebasedatabase.app/event${eventList[currentEvent].EventID}/tilmeldinger.json`, {
+          method: "PUT",
+          body: JSON.stringify(newValue),
+      });
+
+      if (!res.ok) throw new Error("Failed to update tilmeldinger");
+  } catch (error) {
+      console.error(error);
+  }
 }
+
+//Afmeld Funktioner
+function afmeldPopup(Overskrift, EventIndex){
+  currentEvent = EventIndex;
+  tilmeldOverskrift = Overskrift;
+  afmeldTrigger.value = true;
+}
+
+async function afmeldButton(){
+  eventList[currentEvent].EventActive = false;
+  localStorage.setItem(`${eventList[currentEvent].EventID}`, `${eventList[currentEvent].EventActive}`);
+  afmeldTrigger.value = false;
+  try {
+    // 1. Get current value
+      const getRes = await fetch(`https://eksamen3sem-40c2e-default-rtdb.europe-west1.firebasedatabase.app/event${eventList[currentEvent].EventID}/tilmeldinger.json`);
+      let currentValue = await getRes.json(); // current number
+      if (!currentValue) currentValue = 0;
+
+      // 2. Increment Minus
+      const newValue = currentValue - 1;
+
+      // 3. Write it back
+      const res = await fetch(`https://eksamen3sem-40c2e-default-rtdb.europe-west1.firebasedatabase.app/event${eventList[currentEvent].EventID}/tilmeldinger.json`, {
+          method: "PUT",
+          body: JSON.stringify(newValue),
+      });
+
+      if (!res.ok) throw new Error("Failed to update tilmeldinger");
+  } catch (error) {
+      console.error(error);
+  }
+}
+
 
 </script>
 
@@ -27,8 +98,21 @@ function tilmedButton(){
       <p>
         Tilmelding til {{ tilmeldOverskrift }}
       </p>
-      <button class="tilmedButton" v-on:click="tilmedButton">
+      <button class="tilmeldButton" v-on:click="tilmeldButton">
         Tilmeld
+      </button>
+    </div>
+  </div>
+</div>
+
+<div v-if="afmeldTrigger">
+    <div class="popup">
+    <div class="popup-inner">
+      <p>
+        Afmelding af {{ tilmeldOverskrift }}
+      </p>
+      <button class="tilmeldButton" v-on:click="afmeldButton">
+        Afmeld
       </button>
     </div>
   </div>
@@ -58,7 +142,8 @@ function tilmedButton(){
         <h2>2025</h2>
         <h3>KL 16:00</h3>
       </div>
-      <button class="eventButton" v-on:click="openPopup(`Mike Andersen Instore Koncert & Album Release`, 0)">PÅMIND MIG</button>
+      <button v-if="eventList[0].EventActive == false" class="eventButton" v-on:click="openPopup(`Mike Andersen Instore Koncert & Album Release`, 0)">PÅMIND MIG</button>
+      <button v-if="eventList[0].EventActive == true" class="eventButton" v-on:click="afmeldPopup(`Mike Andersen Instore Koncert & Album Release`, 0)">AFMELD</button>
     </div>
   </div>
 
@@ -84,8 +169,9 @@ function tilmedButton(){
         <h2>2025</h2>
         <h3>KL 15:00</h3>
       </div>
-      <button class="eventButton" v-on:click="openPopup(`Jacob Aksglæde Instore Koncert & Album Release`)">PÅMIND MIG</button>
-    </div>
+      <button v-if="eventList[1].EventActive == false" class="eventButton" v-on:click="openPopup(`Jacob Aksglæde Instore Koncert & Album Release`, 1)">PÅMIND MIG</button>
+      <button v-if="eventList[1].EventActive == true" class="eventButton" v-on:click="afmeldPopup(`Jacob Aksglæde Instore Koncert & Album Release`, 1)">AFMELD</button>
+      </div>
   </div>
 
   <hr class="eventhr" />
@@ -111,7 +197,8 @@ function tilmedButton(){
         <h2>2025</h2>
         <h3>KL 13 - 16</h3>
       </div>
-      <button class="eventButton" v-on:click="openPopup(`Lagersalg på vestrebro`)">PÅMIND MIG</button>
+      <button v-if="eventList[2].EventActive == false" class="eventButton" v-on:click="openPopup(`Lagersalg på vestrebro`, 2)">PÅMIND MIG</button>
+      <button v-if="eventList[2].EventActive == true" class="eventButton" v-on:click="afmeldPopup(`Lagersalg på vestrebro`, 2)">AFMELD</button>
     </div>
   </div>
 </template>
