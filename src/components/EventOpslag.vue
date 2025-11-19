@@ -150,7 +150,7 @@ function annullerButton(){
   <div class="eventOpslagDiv">
     <img src="/mikeandersen.png" alt="">
     <div class="eventTekstDiv">
-      <h1>Mike Andersen Instore Koncert & Album Release</h1>
+      <h2>Mike Andersen Instore Koncert & Album Release</h2>
       <p class="eventAdresse">Nørrebrogade 5C, 7100 Vejle, Danmark</p>
       <p class="eventDesc">Instore koncert i Vejle med den prisvindende bluesmusiker Mike Andersen.
         Efter næsten tre årtier på scenen er Mike Andersen klar med sit 10. studiealbum "All Out Of Love" -
@@ -164,10 +164,12 @@ function annullerButton(){
     </div>
     <div class="eventDatoDiv">
       <div class="datoInformation">
-        <h2>SEP</h2>
-        <h2>26</h2>
-        <h2>2025</h2>
-        <h3>KL 16:00</h3>
+        <div>
+          <h2>SEP</h2>
+          <h2 class="datoBold">26</h2>
+          <h2>2025</h2>
+        </div>
+        <h2 class="datoTid">KL 16:00</h2>
       </div>
       <button v-if="eventList[0].EventActive == false" class="eventButton" v-on:click="openPopup(`Mike Andersen Instore Koncert & Album Release`, 0, `/mikeandersen.png`)">TILMELD DIG</button>
       <button v-if="eventList[0].EventActive == true" class="eventButtonActive" v-on:click="afmeldPopup(`Mike Andersen Instore Koncert & Album Release`, 0, `/mikeandersen.png`)"></button>
@@ -179,7 +181,7 @@ function annullerButton(){
   <div class="eventOpslagDiv">
     <img src="/jacobaksglaede.png" alt="">
     <div class="eventTekstDiv">
-      <h1>Jacob Aksglæde Instore Koncert & Album Release</h1>
+      <h2>Jacob Aksglæde Instore Koncert & Album Release</h2>
       <p class="eventAdresse">Sankt Knuds Kirkestr. 2A, 5000 Odense, Denmark</p>
       <p class="eventDesc">Jacob Aksglaede udgiver sit nye album "Blåbærvej" - og det er tilmed hans fødselsdag!
         Vi fejrer det i vores Odense-butik, hvor Jacob spiller en instore-koncert og vi byder på lidt godt til ganen.
@@ -191,10 +193,12 @@ function annullerButton(){
     </div>
     <div class="eventDatoDiv">
       <div class="datoInformation">
-        <h2>SEP</h2>
-        <h2>19</h2>
-        <h2>2025</h2>
-        <h3>KL 15:00</h3>
+        <div>
+          <h2>SEP</h2>
+          <h2 class="datoBold">19</h2>
+          <h2>2025</h2>
+        </div>
+        <h2 class="datoTid">KL 15:00</h2>
       </div>
       <button v-if="eventList[1].EventActive == false" class="eventButton" v-on:click="openPopup(`Jacob Aksglæde Instore Koncert & Album Release`, 1, `/jacobaksglaede.png`)">TILMELD DIG</button>
       <button v-if="eventList[1].EventActive == true" class="eventButtonActive" v-on:click="afmeldPopup(`Jacob Aksglæde Instore Koncert & Album Release`, 1, `/jacobaksglaede.png`)"></button>
@@ -205,7 +209,7 @@ function annullerButton(){
   <div class="eventOpslagDiv">
     <img src="/lagersalg.png" alt="">
     <div class="eventTekstDiv">
-      <h1>Lagersalg på vestrebro</h1>
+      <h2>Lagersalg på vestrebro</h2>
       <p class="eventAdresse">Vesterbro 13, 5000 Odense C</p>
       <p class="eventDesc">Vores populære lagersalg er tilbage for første gang i mange år!
         Vi rydder op på lageret med billige varer fra 5 kroner stykket!+1000 LP'er fra 5 kroner,
@@ -219,10 +223,12 @@ function annullerButton(){
     </div>
     <div class="eventDatoDiv">
       <div class="datoInformation">
-        <h2>JULI</h2>
-        <h2>21</h2>
-        <h2>2025</h2>
-        <h3>KL 13 - 16</h3>
+        <div>
+          <h2>JULI</h2>
+          <h2 class="datoBold">21</h2>
+          <h2>2025</h2>
+        </div>
+        <h2 class="datoTid">KL 13 - 16</h2>
       </div>
       <button v-if="eventList[2].EventActive == false" class="eventButton" v-on:click="openPopup(`Lagersalg på vestrebro`, 2, `/lagersalg.png`)">TILMELD DIG</button>
       <button v-if="eventList[2].EventActive == true" class="eventButtonActive" v-on:click="afmeldPopup(`Lagersalg på vestrebro`, 2, `/lagersalg.png`)"></button>

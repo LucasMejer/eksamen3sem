@@ -54,7 +54,7 @@ function checkScreenSize() {
 
 
 <template>
-  <h1 class="carouselHeader">Nyheder</h1>
+  <h2 class="carouselHeader">NYHEDER</h2>
   <div class="productsDiv">
     <button v-on:click="prev" class="buttonLeft"></button>
     <div class="carousel">

@@ -1,16 +1,38 @@
 @use "colors";
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Display:wght@400..800&display=swap');
+//Wix Madefor Display Font
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
+//Montserrat Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+//Poppins Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
-  font-family: "Wix Madefor Display", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
   margin: 0px;
   padding: 0px;
   background-color: colors.$background;
+}
+
+h1{
+  font-family: "Wix Madefor Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 64px;
+}
+
+h2{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 32px;
+  color: colors.$black;
 }
 
 //Header SCSS
@@ -78,6 +100,7 @@ html, body {
   text-align: center;
   color: colors.$black;
   margin-top: 10px;
+  padding-bottom: 10px;
 }
 
 .productsDiv{
@@ -217,6 +240,10 @@ hr{
 }
 
 //Event Side
+.eventOverskrift{
+  text-align: center;
+}
+
 .eventOpslagDiv{
   margin-top: 35px;
   margin-bottom: 35px;
@@ -224,7 +251,7 @@ hr{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-left: 100px;
   margin-right: 100px;
   img{
@@ -257,27 +284,41 @@ hr{
 }
 
 .datoInformation{
-    width: 10vw;
-    border-style: solid;
-    border-color: colors.$black;
-    aspect-ratio: 1 / 1;
+    width: 15vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    h2{
+    margin-bottom: 15px;
+    div{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 10vw;
+      aspect-ratio: 1 / 1;
+      border-style: solid;
+    border-color: colors.$black;
+      h2{
       text-align: center;
       padding: 0px;
       margin: 0px;
       color: colors.$black;
     }
-    h3{
-      margin: 0px;
-      background-color: colors.$black;
-      color: colors.$white;
-      width: 100%;
     }
-    margin-bottom: 25px;
+}
+
+.datoBold{
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.datoTid{
+  padding: 5px;
+  margin: 0px;
+  background-color: colors.$black;
+  color: colors.$white;
+  width: 10vw;
+  font-size: 24px;
 }
 
 .eventButton{
@@ -340,7 +381,8 @@ hr{
 .eventIntroTekstDiv h1 {
   margin: 25px 0 5px 0;
 }
-.eventIntroTekstDiv h3 {
+.eventIntroTekstDiv p {
+  color: colors.$black;
   margin-bottom: 25px;
 }
 
@@ -447,6 +489,7 @@ hr{
     margin-left: 25px;
     margin-right: 25px;
     flex-direction: column;
+    align-items: center;
     img{
       width: 50vw;
     }
@@ -458,12 +501,19 @@ hr{
   }
 
   .eventDatoDiv{
-    width: 20vw;
+    width: 25vw;
   }
 
   .datoInformation{
     width: 25vw;
     margin-top: 20px;
+    div{
+      width: 25vw;
+    }
+  }
+
+  .datoTid{
+    width: 25vw;
   }
 
   .eventOpslagDiv h1 {
