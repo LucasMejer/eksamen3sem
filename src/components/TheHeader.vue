@@ -4,21 +4,23 @@
 import { onMounted } from 'vue'
 
 onMounted(() => {
+
   // HAMBURGER MENU
   const menuToggle = document.querySelector('.menu__toggle')
-  const navLinksAll = document.querySelectorAll('.nav__links--first, .nav__links--second')
+  const linkSites = document.querySelector('.link__sites')
 
-  if (menuToggle && navLinksAll.length > 0) {
+  if (menuToggle && linkSites) {
+
+    // Toggle hele menu-containeren
     menuToggle.addEventListener('click', () => {
-      navLinksAll.forEach(nav => nav.classList.toggle('active'))
+      linkSites.classList.toggle('active')
     })
 
-    navLinksAll.forEach(nav => {
-      const links = nav.querySelectorAll('a')
-      links.forEach(link => {
-        link.addEventListener('click', () => {
-          navLinksAll.forEach(n => n.classList.remove('active'))
-        })
+    // Luk menu når et link klikkes
+    const allLinks = linkSites.querySelectorAll('a')
+    allLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        linkSites.classList.remove('active')
       })
     })
   }
@@ -38,7 +40,8 @@ onMounted(() => {
       }
     })
   })
-});
+})
+
 
 </script>
 
