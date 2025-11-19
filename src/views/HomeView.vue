@@ -6,6 +6,7 @@ import ProductCarousel from '@/components/ProductCarousel.vue';
 import TheHeader from '@/components/TheHeader.vue';
 import FooterBar from '@/components/FooterBar.vue';
 import InfoBarSecond from '@/components/InfoBarSecond.vue';
+import NyhedsbrevBar from '@/components/NyhedsbrevBar.vue';
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import InfoBarSecond from '@/components/InfoBarSecond.vue';
     <InfoBarFirst />
     <NyhederCarousel />
     <InfoBarSecond />
+    <NyhedsbrevBar />
     <FooterBar />
   </main>
 </template>
