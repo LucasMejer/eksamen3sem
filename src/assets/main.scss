@@ -75,7 +75,7 @@ html, body {
 //Product Carousel SCSS
 .carouselHeader{
   text-align: center;
-  color: white;
+  color: colors.$black;
   margin-top: 10px;
 }
 
@@ -83,7 +83,7 @@ html, body {
   display: flex;
   margin-left: 25px;
   margin-right: 25px;
-  background-color: colors.$black;
+  background-color: colors.$background;
   align-items: center;
 }
 
@@ -125,7 +125,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: colors.$black;
 
   img{
     width: 250px;
@@ -144,24 +144,28 @@ html, body {
 
 .productTitle{
   font-weight: bold;
+  color: colors.$black;
 }
 
 .productArtist{
   font-weight: bold;
-  color: #8A8F99;
+  color: colors.$grey;
 }
 
 .productPrice{
   font-weight: bold;
+  color: colors.$black;
 }
 
 .kurvButton{
-  background-color: #F9B333;
+  background-color: colors.$turquoise;
   border: none;
   text-decoration: none;
   width: 7.5vw;
   height: 35px;
   margin-top: 5px;
+  border-radius: 5px;
+  color: colors.$white;
 }
 
 @media only screen and (max-width: 768px){
@@ -206,9 +210,9 @@ html, body {
 }
 
 hr{
-  border-width: 2px;
+  border-width: 1.5px;
   border-style: solid;
-  border-color: #4CB9AC;
+  border-color: colors.$black;
 }
 
 //Event Side
@@ -232,9 +236,14 @@ hr{
   width: 55vw;
   padding-left: 15px;
   padding-right: 15px;
+  color: colors.$black;
   p{
     padding-right: 150px;
   }
+}
+
+.eventDesc{
+  color: colors.$black;
 }
 
 .eventDatoDiv{
@@ -249,7 +258,7 @@ hr{
 .datoInformation{
     width: 10vw;
     border-style: solid;
-    border-color: #F9B333;
+    border-color: colors.$black;
     aspect-ratio: 1 / 1;
     display: flex;
     flex-direction: column;
@@ -259,12 +268,12 @@ hr{
       text-align: center;
       padding: 0px;
       margin: 0px;
-      color: #F9B333;
+      color: colors.$black;
     }
     h3{
       margin: 0px;
-      background-color: #F9B333;
-      color: colors.$black;
+      background-color: colors.$black;
+      color: colors.$white;
       width: 100%;
     }
     margin-bottom: 25px;
@@ -272,21 +281,42 @@ hr{
 
 .eventButton{
   width: 10vw;
-  background-color: #F9B333;
-  color: colors.$black;
-  border: none;
+  background-color: colors.$turquoise;
+  color: colors.$white;
+  border-style: solid;
+  border-color: colors.$turquoise;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 5px;
+  &:hover{
+    background-color: colors.$white;
+    color: colors.$turquoise;
+    border: colors.$turquoise;
+    border-style: solid;
+  }
 }
 
-.eventButtonRed{
+.eventButtonActive{
   width: 10vw;
-  background-color: #ba4d5b;
-  color: white;
-  border: none;
+  background-color: colors.$turquoise-dark;
+  color: colors.$white;
+  border-style: solid;
+  border-color: colors.$turquoise-dark;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 5px;
+  &::after{
+    content: "TILMELDT";
+  }
+  &:hover{
+    background-color: colors.$yellow;
+    border-color: colors.$yellow;
+    &::after{
+    content: "AFMELD";
+    }
+  }
 }
+
 
 .eventhr{
   margin-right: 100px;
@@ -294,12 +324,12 @@ hr{
 }
 
 .eventAdresse{
-  color: #F9B333;
+  color: colors.$yellow;
 }
 
 .eventIntroTekstDiv{
   margin-bottom: 35px;
-  color: white;
+  color: colors.$black;
   display: flex;
   flex-direction: column;
   margin-left: 100px;
@@ -315,7 +345,7 @@ hr{
 
 .nyhedsbrevOverskrift{
   font-size: 24px;
-  color: #F9B333;
+  color: colors.$black;
 }
 
 .nyhedsbrevFejl{
@@ -323,28 +353,29 @@ hr{
 }
 
 .nyhedsbrevTekst{
+  color: colors.$black;
   width: 40vw;
   margin: 5px 0 5px 0;
 }
 
 .emailInput{
-  border-color: white;
+  border-color: colors.$turquoise;
   border-style: solid;
-  background-color: colors.$black;
-  color: white;
+  background-color: colors.$white;
+  border-radius: 5px;
   width: 20vw;
-  height: 25px;
-}
-
-.emailInput::placeholder{
-  color: white;
+  height: 30px;
+  &::placeholder{
+  color: colors.$black
+  }
 }
 
 .nyhedsbrevButton{
-  color: colors.$black;
-  background-color: #F9B333;
+  color: colors.$white;
+  background-color: colors.$turquoise;
   border-style: solid;
-  border-color: #F9B333;
+  border-color: colors.$turquoise;
+  border-radius: 5px;
   margin-left: 15px;
   margin-right: 15px;
   height: 31px;
@@ -439,6 +470,10 @@ hr{
   }
 
   .eventButton{
+    width: 40vw;
+  }
+
+  .eventButtonActive{
     width: 40vw;
   }
 
@@ -889,7 +924,7 @@ hr{
       justify-content: space-between;
       align-items: center;
     }
-    
+
     .watermark__first {
         position: absolute;
         top: 177%;
