@@ -392,7 +392,7 @@ hr{
 }
 
 .nyhedsbrevFejl{
-  color: #ba4d5b;
+  margin: 0px;
 }
 
 .nyhedsbrevTekst{
@@ -423,55 +423,71 @@ hr{
   margin-right: 15px;
   height: 31px;
   width: 150px;
+  &:hover{
+    color: colors.$turquoise;
+    background-color: colors.$white;
+  }
 }
 
 .popup{
-  color: white;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 99;
-  background-color: #00000047;
-
+  background-color: #00000060;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .popup-inner{
-  background: colors.$black;
+  background: colors.$white;
   padding: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-color: #F9B333;
+  border-color: colors.$turquoise;
   border-style: solid;
-  border-width: 5px;
+  border-width: 2px;
+  border-radius: 5px;
+  p{
+    color: colors.$black;
+  }
 }
 
 .tilmeldButton{
-  color: colors.$black;
-  background-color: #F9B333;
+  color: colors.$white;
+  background-color: colors.$turquoise;
   border-style: solid;
-  border-color: #F9B333;
+  border-color: colors.$turquoise;
+  border-radius: 5px;
   margin-left: 15px;
   margin-right: 15px;
   height: 31px;
   width: 150px;
+  &:hover{
+    color: colors.$turquoise;
+    background-color: colors.$white;
+  }
 }
 
-.tilmeldButtonRed{
+.tilmeldButtonActive{
   color: white;
-  background-color: #ba4d5b;
+  background-color: colors.$yellow;
   border-style: solid;
-  border-color: #ba4d5b;
+  border-color: colors.$yellow;
+  border-radius: 5px;
   margin-left: 15px;
   margin-right: 15px;
   height: 31px;
   width: 150px;
+  &:hover{
+    color: colors.$yellow;
+    background-color: colors.$white;
+  }
 }
 
 .popupImage{
