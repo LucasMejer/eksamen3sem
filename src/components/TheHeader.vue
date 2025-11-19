@@ -82,7 +82,7 @@ onMounted(() => {
         </div>
 
         <div class="name__moby">
-            <img src="/mobydisc_logotype_fullcolor_rgb.png" alt="logo til forside øverst nav bar moby disc">
+            <img src="/public/mobydisc_horizontal_black.png" alt="logo til forside øverst nav bar moby disc">
         </div>
 
         <div class="shop__logos">
@@ -117,12 +117,6 @@ onMounted(() => {
             </ul>
         </div>
     </nav>
-
-<!-- SCROLL UP KNAP -->
-
-  <button id="scrollUpBtn"><i class="fa-solid fa-chevron-up"></i></button>
-
-
 </body>
 
 </template>
