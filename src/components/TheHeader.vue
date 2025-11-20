@@ -68,6 +68,10 @@ onMounted(() => {
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star-half"></i>
             <p><u>365 anmeldelser</u> på Google</p>
+            
+            <div class="denmark__image">
+                <img src="/public/flag_of_denmark.png" alt="flag af danmark til skift af sprog">
+            </div>
         </div>
     </nav>
 
@@ -83,17 +87,17 @@ onMounted(() => {
 
         <div class="name__moby">
             <img src="/public/mobydisc_horizontal_black.png" alt="logo til forside øverst nav bar moby disc">
-        </div>
 
-        <div class="shop__logos">
-            <div class="logo__cart">
-                <a href="#" class="fa-solid fa-magnifying-glass"></a>
-            </div>
-            <div class="logo__search">
-                <a href="#" class="fa-solid fa-cart-shopping"></a>
-            </div>
-            <div class="logo__user">
-                <a href="#" class="fa-solid fa-user"></a>
+            <div class="shop__logos">
+                <div class="logo__cart">
+                    <a href="#" class="fa-solid fa-magnifying-glass"></a>
+                </div>
+                <div class="logo__search">
+                    <a href="#" class="fa-solid fa-cart-shopping"></a>
+                </div>
+                <div class="logo__user">
+                    <a href="#" class="fa-solid fa-user"></a>
+                </div>
             </div>
         </div>
     </nav>
