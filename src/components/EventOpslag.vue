@@ -137,7 +137,7 @@ function annullerButton(){
         <button class="tilmeldButton" v-on:click="annullerButton">
         Annuller
         </button>
-        <button class="tilmeldButtonRed" v-on:click="afmeldButton">
+        <button class="tilmeldButtonActive" v-on:click="afmeldButton">
         Afmeld
       </button>
       </div>
