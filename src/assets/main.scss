@@ -11,6 +11,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 16px;
 }
 
 body {
@@ -109,6 +110,7 @@ html, body {
   margin-right: 25px;
   background-color: colors.$background;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .buttonLeft{
@@ -183,13 +185,19 @@ html, body {
 
 .kurvButton{
   background-color: colors.$turquoise;
-  border: none;
+  border-style: solid;
   text-decoration: none;
   width: 7.5vw;
   height: 35px;
   margin-top: 5px;
   border-radius: 5px;
   color: colors.$white;
+  border-width: 2px;
+  border-color: colors.$turquoise;
+  &:hover{
+    background-color: colors.$white;
+    color: colors.$turquoise;
+  }
 }
 
 @media only screen and (max-width: 768px){
@@ -220,23 +228,39 @@ html, body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   div{
-    color: white;
+    color: colors.$black;
     img{
       width: 500px;
-      height: 500px;
+      height: auto;
     }
+  }
+  p{
+    color: colors.$black;
+  }
+  h1{
+    margin-bottom: 10px;
   }
 }
 
 .kontaktMainDiv h2 {
   margin-top: 10px;
+  color: colors.$black;
 }
 
 hr{
   border-width: 1.5px;
   border-style: solid;
   border-color: colors.$black;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px){
+  .kontaktMainDiv{
+    flex-direction: column;
+    align-items: normal;
+  }
 }
 
 //Event Side
@@ -267,9 +291,9 @@ hr{
   color: colors.$black;
   h2{
     color: colors.$black;
+    padding-bottom: 0px;
   }
   p{
-    color: colors.$black;
     padding-right: 150px;
   }
 }
@@ -363,14 +387,15 @@ hr{
   }
 }
 
-
 .eventhr{
   margin-right: 100px;
   margin-left: 100px;
 }
 
 .eventAdresse{
-  color: colors.$yellow;
+  color: colors.$black;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .eventIntroTekstDiv{
