@@ -37,7 +37,7 @@ async function sendMail(){
 <template>
      <div class="intro__section--nyhedsbrev">
         <div class="nyhedsbrevBarDiv">
-            <div class="nyhedbrevBarInputDiv">
+            <div class="nyhedsbrevBarInputDiv">
                 <input type="text" placeholder="Skriv din e-mail her..." class="emailInput" v-model="mail">
                 <button class="nyhedsbrevButton" v-on:click="sendMail">TILMELD DIG</button>
                 <p class="nyhedsbrevOverskrift" v-if="erTilmeldt">

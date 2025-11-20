@@ -1160,3 +1160,19 @@ hr{
     color: colors.$black;
   }
 }
+
+@media only screen and (max-width: 768px){
+  .nyhedsbrevBarDiv{
+    flex-direction: column-reverse;
+  }
+
+  .nyhedsbrevBarInputDiv{
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .emailInput{
+    width: 40vw;
+  }
+}
