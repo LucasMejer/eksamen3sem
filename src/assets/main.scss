@@ -728,7 +728,8 @@ hr{
   .footer__text {
     display: flex;
     justify-content: left;
-    transform: translateX(110px);
+    margin-left: 125px;
+    margin-right: 125px;
   }
 }
 
@@ -965,6 +966,7 @@ hr{
     .intro__section--first {
       padding: 15px 160px 15px 160px;
       overflow: hidden;
+      position: relative;
     }
 
     .intro__section--second {
@@ -972,6 +974,7 @@ hr{
       width: 100%;
       padding-left: 160px;
       overflow: hidden;
+      position: relative;
     }
 
     .intro__text {
@@ -1007,7 +1010,7 @@ hr{
 
     .watermark__first {
         position: absolute;
-        top: 177%;
+        //top: 177%;
         left: -200px;
         width: 28.5%;
         opacity: 0.02;
@@ -1017,8 +1020,8 @@ hr{
 
     .watermark__second {
       position: absolute;
-        top: 289.5%;
-        left: 1250px;
+        //top: 289.5%;
+        left: 1200px;
         width: 600px;
         opacity: 0.02;
         z-index: 1;
@@ -1051,7 +1054,7 @@ hr{
     }
 
     .footer__content p {
-        width: 200px;
+        max-width: 200px;
         line-height: 1.5;
         color: colors.$white;
     }
@@ -1060,16 +1063,16 @@ hr{
         display: flex;
         flex-direction: column;
         gap: 10px;
-        transform: translateX(25px);
+        padding-left: 25px;
     }
 
     .footer__text {
-        gap: 70px;
+        gap: 4vw;
     }
 
     .footer__contact, .footer__some {
-        padding-left: 240px;
-        width: 600px;
+        padding-left: 15vw;
+        max-width: 600px;
     }
 
     .footer__contact a {
