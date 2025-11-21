@@ -68,7 +68,7 @@ onMounted(() => {
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star-half"></i>
             <p><u>365 anmeldelser</u> på Google</p>
-            
+
             <div class="denmark__image">
                 <img src="/public/flag_of_denmark.png" alt="flag af danmark til skift af sprog">
             </div>
@@ -107,7 +107,8 @@ onMounted(() => {
     <nav class="navbar__menu">
         <div class="link__sites">
             <ul class="nav__links--first">
-                <li><router-link to="/" class="router-link-active">VINYL</router-link></li>
+                <li><router-link to="/" class="router-link-active">FORSIDE</router-link></li>
+                <li><router-link to="/cd">VINYL</router-link></li>
                 <li><router-link to="/cd">CD</router-link></li>
                 <li><router-link to="/cd">FILM</router-link></li>
                 <li><router-link to="/cd">TILBEHØR</router-link></li>
