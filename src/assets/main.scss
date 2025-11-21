@@ -369,19 +369,20 @@ hr{
 
 .eventButtonActive{
   width: 10vw;
-  background-color: colors.$turquoise-dark;
+  background-color: colors.$yellow;
   color: colors.$white;
   border-style: solid;
-  border-color: colors.$turquoise-dark;
+  border-color: colors.$yellow;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 5px;
   &::after{
-    content: "TILMELDT";
+    content: "AFMELD";
   }
   &:hover{
-    background-color: colors.$yellow;
+    background-color: colors.$white;
     border-color: colors.$yellow;
+    color: colors.$yellow;
     &::after{
     content: "AFMELD";
     }
@@ -831,7 +832,7 @@ hr{
     }
 
     .shop__logos {
-      
+
     }
 
     .footer__buttons .footer__content p {
