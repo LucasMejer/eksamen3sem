@@ -116,7 +116,7 @@ onMounted(() => {
             </ul>
 
             <ul class="nav__links--second">
-                <li><router-link to="/cd">OM OS</router-link></li>
+                <li><router-link to="/omos">OM OS</router-link></li>
                 <li><router-link to="/events">EVENTS</router-link></li>
                 <li><router-link to="/kontakt">KONTAKT</router-link></li>
             </ul>

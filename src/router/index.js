@@ -42,6 +42,11 @@ const router = createRouter({
       name: 'afmelding',
       component: () => import('../views/MisapplyView.vue'),
     },
+    {
+      path: '/omos',
+      name: 'omos',
+      component: () => import('../views/OmOsView.vue'),
+    },
   ],
 })
 

@@ -1,0 +1,19 @@
+<script setup>
+
+</script>
+
+<template>
+     <div class="intro__section--first">
+        <img class="watermark__first" src="/mobydisc_fullwhite_logo_rgb.png" alt="moby disc watermark til baggrund af introsektioner">
+        <div class="intro__first">
+            <div class="intro__picture">
+                <img src="/vinylStoreSortiment.jpg" alt="Moby Disc butik i Odense front billede">
+            </div>
+            <div class="intro__text">
+              <h1>ALT I MUSIK</h1>
+                <p>Hos Moby Disc handler musik ikke kun om at lytte - men om at opleve den sammen. Vi afholder jævnligt events som vinyludgivelser, signeringer, liveoptrædener og lytteaftener, hvor musikelskere kan mødes, dele passionen og opdage ny lyd.</p>
+                <p>Hold øje med vores kommende events - der er altid noget at glæde sig til!</p>
+            </div>
+        </div>
+    </div>
+</template>

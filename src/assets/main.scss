@@ -373,19 +373,20 @@ hr{
 
 .eventButtonActive{
   width: 10vw;
-  background-color: colors.$turquoise-dark;
+  background-color: colors.$yellow;
   color: colors.$white;
   border-style: solid;
-  border-color: colors.$turquoise-dark;
+  border-color: colors.$yellow;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 5px;
   &::after{
-    content: "TILMELDT";
+    content: "AFMELD";
   }
   &:hover{
-    background-color: colors.$yellow;
+    background-color: colors.$white;
     border-color: colors.$yellow;
+    color: colors.$yellow;
     &::after{
     content: "AFMELD";
     }
@@ -724,7 +725,8 @@ hr{
   .footer__text {
     display: flex;
     justify-content: left;
-    transform: translateX(110px);
+    margin-left: 125px;
+    margin-right: 125px;
   }
 }
 
@@ -894,7 +896,7 @@ hr{
         list-style-type: none;
         font-size: 16px;
         gap: 65px;
-        transform: translateX(120px);
+        transform: translateX(7.5vw);
     }
 
     .nav__links--second {
@@ -904,7 +906,8 @@ hr{
         list-style-type: none;
         font-size:  16px;
         gap: 65px;
-        width: 700px;
+        position: absolute;
+        right: 7.5vw;
     }
 
     .nav__links--first a, .nav__links--second a {
@@ -930,6 +933,7 @@ hr{
       justify-content: center;
       align-items: center;
       flex-direction: row;
+      position: relative;
     }
 
     .shop__logos {
@@ -941,6 +945,10 @@ hr{
 
     .shop__logos a {
       font-size: 30px;
+      position: absolute;
+        font-size: 26px;
+        transform: translateX(-50%);
+        right: 30px;
     }
 
     .navbar__info {
@@ -958,6 +966,8 @@ hr{
       display: flex;
       flex-direction: row;
       padding: 12px 60px 12px 0;
+      padding: 12px 0 12px 0;
+      position: relative;
     }
 
     .nav__links--first a:hover, .nav__links--second a:hover {
@@ -969,6 +979,7 @@ hr{
     .intro__section--first {
       padding: 15px 160px 15px 160px;
       overflow: hidden;
+      position: relative;
     }
 
     .intro__section--second {
@@ -976,6 +987,7 @@ hr{
       width: 100%;
       padding-left: 160px;
       overflow: hidden;
+      position: relative;
     }
 
     .intro__text {
@@ -1011,7 +1023,7 @@ hr{
 
     .watermark__first {
         position: absolute;
-        top: 177%;
+        //top: 177%;
         left: -200px;
         width: 28.5%;
         opacity: 0.02;
@@ -1021,8 +1033,8 @@ hr{
 
     .watermark__second {
       position: absolute;
-        top: 289.5%;
-        left: 1250px;
+        //top: 289.5%;
+        left: 1200px;
         width: 600px;
         opacity: 0.02;
         z-index: 1;
@@ -1055,7 +1067,7 @@ hr{
     }
 
     .footer__content p {
-        width: 200px;
+        max-width: 200px;
         line-height: 1.5;
         color: colors.$white;
     }
@@ -1064,16 +1076,16 @@ hr{
         display: flex;
         flex-direction: column;
         gap: 10px;
-        transform: translateX(25px);
+        padding-left: 25px;
     }
 
     .footer__text {
-        gap: 70px;
+        gap: 4vw;
     }
 
     .footer__contact, .footer__some {
-        padding-left: 240px;
-        width: 600px;
+        padding-left: 15vw;
+        max-width: 600px;
     }
 
     .footer__contact a {
