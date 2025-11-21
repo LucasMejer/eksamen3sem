@@ -897,7 +897,7 @@ hr{
         list-style-type: none;
         font-size: 16px;
         gap: 65px;
-        transform: translateX(120px);
+        transform: translateX(7.5vw);
     }
 
     .nav__links--second {
@@ -907,7 +907,8 @@ hr{
         list-style-type: none;
         font-size:  16px;
         gap: 65px;
-        width: 700px;
+        position: absolute;
+        right: 7.5vw;
     }
 
     .nav__links--first a, .nav__links--second a {
@@ -933,11 +934,14 @@ hr{
       justify-content: center;
       align-items: center;
       flex-direction: row;
+      position: relative;
     }
 
     .shop__logos {
+      position: absolute;
         font-size: 26px;
-        transform: translateX(260px);
+        transform: translateX(-50%);
+        right: 30px;
     }
 
     .navbar__info {
@@ -955,6 +959,7 @@ hr{
       display: flex;
       flex-direction: row;
       padding: 12px 0 12px 0;
+      position: relative;
     }
 
     .nav__links--first a:hover, .nav__links--second a:hover {
