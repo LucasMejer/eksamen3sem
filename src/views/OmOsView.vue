@@ -1,6 +1,7 @@
 <script setup>
 import FooterBar from '@/components/FooterBar.vue';
-import OmOsHistorie from '@/components/OmOsHistorie.vue';
+import OmOsFirstBar from '@/components/OmOsFirstBar.vue';
+import OmOsSecondBar from '@/components/OmOsSecondBar.vue';
 import TheHeader from '@/components/TheHeader.vue';
 
 </script>
@@ -8,7 +9,8 @@ import TheHeader from '@/components/TheHeader.vue';
 <template>
   <main>
     <TheHeader />
-    <OmOsHistorie />
+    <OmOsFirstBar />
+    <OmOsSecondBar />
     <FooterBar />
   </main>
 </template>
