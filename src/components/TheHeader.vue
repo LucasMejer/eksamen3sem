@@ -68,7 +68,7 @@ onMounted(() => {
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star-half"></i>
             <p><u>365 anmeldelser</u> på Google</p>
-            
+
             <div class="denmark__image">
                 <img src="/public/flag_of_denmark.png" alt="flag af danmark til skift af sprog">
             </div>
@@ -115,7 +115,7 @@ onMounted(() => {
             </ul>
 
             <ul class="nav__links--second">
-                <li><router-link to="/cd">OM OS</router-link></li>
+                <li><router-link to="/omos">OM OS</router-link></li>
                 <li><router-link to="/events">EVENTS</router-link></li>
                 <li><router-link to="/kontakt">KONTAKT</router-link></li>
             </ul>
