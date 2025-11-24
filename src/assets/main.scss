@@ -69,7 +69,7 @@ html, body {
 
 .navbar__info p {
   color: colors.$white;
-} 
+}
 
 .info__text {
     display: flex;
@@ -1044,7 +1044,7 @@ hr{
 // FOOTER
 
     .footer {
-        border-top: 3px solid colors.$black;
+        border-top: 3px solid colors.$grey-dark;
     }
 
     .footer__content li {
@@ -1219,5 +1219,32 @@ hr{
 
   .emailInput{
     width: 40vw;
+  }
+}
+
+//Om Os Side
+.intro__omos{
+  padding: 30px 160px 30px 160px;
+  width: 100%;
+  padding-left: 160px;
+  overflow: hidden;
+  position: relative;
+  color: colors.$black;
+  line-height: 1.4;
+  background-color: colors.$white;
+  img{
+    max-width: 432px;
+    height: auto;
+  }
+}
+
+.intro__omos--text{
+  width: 450px;
+  margin: 20px 0 20px 0;
+  p{
+    color: colors.$black;
+  }
+  h2{
+    color: colors.$black;
   }
 }
