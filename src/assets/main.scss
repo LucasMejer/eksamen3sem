@@ -261,7 +261,7 @@ hr{
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1024px){
   .kontaktMainDiv{
     flex-direction: column;
     align-items: normal;
@@ -536,7 +536,7 @@ hr{
   margin: 15px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1024px){
   .eventOpslagDiv{
     margin-left: 25px;
     margin-right: 25px;
@@ -1212,7 +1212,7 @@ hr{
   }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1024px){
   .nyhedsbrevBarDiv{
     flex-direction: column-reverse;
   }
