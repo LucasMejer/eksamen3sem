@@ -624,6 +624,12 @@ hr{
     line-height: 1.4;
 }
 
+.shop__logos{
+  display: flex;
+  justify-content: center;
+  gap:15px;
+}
+
 .shop__logos a {
     color: colors.$black;
     text-decoration: none;
@@ -895,7 +901,7 @@ hr{
         justify-content: left;
         list-style-type: none;
         font-size: 16px;
-        gap: 65px;
+        gap: 2.5vw;
         transform: translateX(7.5vw);
     }
 
@@ -905,7 +911,7 @@ hr{
         justify-content: right;
         list-style-type: none;
         font-size:  16px;
-        gap: 65px;
+        gap: 2.5vw;
         position: absolute;
         right: 7.5vw;
     }
@@ -940,15 +946,15 @@ hr{
       display: flex;
       flex-direction: row;
       gap: 7px;
-      transform: translateX(370px);
+      position: absolute;
+        font-size: 26px;
+        transform: translateX(-75%);
+        right: 30px;
     }
 
     .shop__logos a {
       font-size: 30px;
-      position: absolute;
-        font-size: 26px;
-        transform: translateX(-50%);
-        right: 30px;
+
     }
 
     .navbar__info {
@@ -1247,4 +1253,13 @@ hr{
   h2{
     color: colors.$black;
   }
+}
+
+.intro__omos{
+  display: flex;
+  justify-content: center;
+}
+
+.intro__omos--text{
+  width: 100%;
 }
