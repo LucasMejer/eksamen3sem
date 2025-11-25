@@ -204,5 +204,25 @@
             </div>
 
         </div>
-    </div>
+
+        <div class="faq__section">
+                <h2>FAQ</h2>
+                <div class="faq__boxes">
+                    <div>
+                        <h3>Hvordan installerer jeg Vue?</h3>
+                        <p>Skriv i terminalen i den korrekte installationsmappe 'npm install vite@latest'</p>
+                    </div>
+                    <div>
+                        <h3>Hvilke bokse skal jeg vinge af i Firebase installation?</h3>
+                        <p>Dem der er brugt i dette projekt er Hosting og Realtime Database</p>
+                    </div>
+                        <h3>Hvordan tilføjer jeg en ny farve til siden?</h3>
+                        <p>I CSS-filen under /assets er '_colors.scss'</p>
+                    </div>
+                    <div>
+                        <h3>Hvordan skal en ny .vue fil se ud?</h3>
+                        <p>Øverst skal man have Javascript-delen altså &lt;script setup&gt;&lt;/script&gt;. Hvorefter man har &lt;template&gt;&lt;/template&gt;</p>
+                    </div>
+                </div>
+         </div>
 </template>

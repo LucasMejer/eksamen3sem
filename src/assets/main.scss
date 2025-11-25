@@ -1305,6 +1305,17 @@ hr{
   line-height: 1.5;
 }
 
+.faq__boxes h3 {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.faq__boxes {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+}
+
 //Nyhedsbrev Bar Forside
 .nyhedsbrevBarDiv{
       display: flex;
