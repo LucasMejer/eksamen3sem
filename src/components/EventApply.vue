@@ -40,12 +40,11 @@
 
         <div class="fourth__step">
             <div>
-                <!--<img src="/public/stepFourthRing.png" alt="skærmbillede der viser hvor man bekræfter tilmeld"> -->
+                <img src="/public/stepFourRing.png" alt="skærmbillede der viser hvor man bekræfter tilmeld">
             </div>
             <div>
                 <h2>Step 4. Bekræft din tilmelding</h2>
-                <p>Udfyld formularen efter du har trykket på den 'orange knap' og tryk igen 'Tilmeld' for at gennenføre tilmeldingen.
-                    Når du har trykket tilmeld, vil du modtage en e-mail omkring bekræftelse for din tilmelding og du kan nu fortsætte på siden eller tilmelde dig flere events.</p>
+                <p>Knappen 'Tilmeld' er nu blevet til en 'Afmeld' knap, for at bekræfte, at man er tilmeldt et event.</p>
             </div>
         </div>
 
