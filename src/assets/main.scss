@@ -69,7 +69,7 @@ html, body {
 
 .navbar__info p {
   color: colors.$white;
-} 
+}
 
 .info__text {
     display: flex;
@@ -261,7 +261,7 @@ hr{
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1024px){
   .kontaktMainDiv{
     flex-direction: column;
     align-items: normal;
@@ -552,7 +552,7 @@ hr{
   margin: 15px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1024px){
   .eventOpslagDiv{
     margin-left: 25px;
     margin-right: 25px;
@@ -638,6 +638,12 @@ hr{
 .name__moby p {
     font-size: 11px;
     line-height: 1.4;
+}
+
+.shop__logos{
+  display: flex;
+  justify-content: center;
+  gap:15px;
 }
 
 .shop__logos a {
@@ -912,7 +918,7 @@ hr{
         justify-content: left;
         list-style-type: none;
         font-size: 16px;
-        gap: 65px;
+        gap: 2.5vw;
         transform: translateX(7.5vw);
     }
 
@@ -922,7 +928,7 @@ hr{
         justify-content: right;
         list-style-type: none;
         font-size:  16px;
-        gap: 65px;
+        gap: 2.5vw;
         position: absolute;
         right: 7.5vw;
     }
@@ -957,15 +963,15 @@ hr{
       display: flex;
       flex-direction: row;
       gap: 7px;
-      transform: translateX(370px);
+      position: absolute;
+        font-size: 26px;
+        transform: translateX(-75%);
+        right: 30px;
     }
 
     .shop__logos a {
       font-size: 30px;
-      position: absolute;
-        font-size: 26px;
-        transform: translateX(-50%);
-        right: 30px;
+
     }
 
     .navbar__info {
@@ -1061,7 +1067,7 @@ hr{
 // FOOTER
 
     .footer {
-        border-top: 3px solid colors.$black;
+        border-top: 3px solid colors.$grey-dark;
     }
 
     .footer__content li {
@@ -1253,7 +1259,7 @@ hr{
   }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1024px){
   .nyhedsbrevBarDiv{
     flex-direction: column-reverse;
   }
@@ -1267,4 +1273,40 @@ hr{
   .emailInput{
     width: 40vw;
   }
+}
+
+//Om Os Side
+.intro__omos{
+  padding: 30px 160px 30px 160px;
+  width: 100%;
+  padding-left: 160px;
+  overflow: hidden;
+  position: relative;
+  color: colors.$black;
+  line-height: 1.4;
+  background-color: colors.$white;
+  img{
+    max-width: 432px;
+    height: auto;
+  }
+}
+
+.intro__omos--text{
+  width: 450px;
+  margin: 20px 0 20px 0;
+  p{
+    color: colors.$black;
+  }
+  h2{
+    color: colors.$black;
+  }
+}
+
+.intro__omos{
+  display: flex;
+  justify-content: center;
+}
+
+.intro__omos--text{
+  width: 100%;
 }
