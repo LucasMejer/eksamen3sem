@@ -94,6 +94,8 @@ html, body {
 //Intro Video SCSS
 .introVideoDiv{
   position: relative;
+  display: flex;
+  align-items: center;
   img{
     display: block;
     width: 100%;
@@ -104,7 +106,7 @@ html, body {
 
 .introTextDiv{
   position: absolute;
-  margin: 10vw;
+  left: 10vw;
   width: 100%;
   color: colors.$white;
   max-width: 50vw;
@@ -153,22 +155,32 @@ html, body {
 
   .introVideoDiv{
   img{
-    height: 40vw;
+    height: 65vw;
   }
   }
 
   .introTextDiv{
-    margin: 5vw;
+    left: 5vw;
     max-width: 75vw;
+    line-height: 1.2;
     p{
       max-width: 75vw;
     }
   }
 
   .introButtons{
+    width: 50vw;
     button{
+      width: 22.5vw;
       height: 50px;
     }
+  }
+  @media only screen and (max-width: 550px){
+    .introVideoDiv{
+    img{
+      height: 85vw;
+    }
+  }
   }
 }
 
@@ -348,7 +360,7 @@ hr{
 .eventOpslagDiv{
   margin-top: 35px;
   margin-bottom: 35px;
-  color: white;
+  color: colors.$white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1386,5 +1398,14 @@ hr{
   }
   h2{
     color: colors.$black;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .intro__section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }

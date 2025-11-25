@@ -70,7 +70,7 @@ onMounted(() => {
             <p><u>365 anmeldelser</u> på Google</p>
 
             <div class="denmark__image">
-                <img src="/public/flag_of_denmark.png" alt="flag af danmark til skift af sprog">
+                <img src="/flag_of_denmark.png" alt="flag af danmark til skift af sprog">
             </div>
         </div>
     </nav>
@@ -86,7 +86,7 @@ onMounted(() => {
         </div>
 
         <div class="name__moby">
-            <img src="/public/mobydisc_horizontal_black.png" alt="logo til forside øverst nav bar moby disc">
+            <img src="/mobydisc_horizontal_black.png" alt="logo til forside øverst nav bar moby disc">
 
             <div class="shop__logos">
                 <div class="logo__cart">
