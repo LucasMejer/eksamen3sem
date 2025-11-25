@@ -546,7 +546,11 @@ hr{
   border-color: colors.$turquoise;
   border-radius: 5px;
   height: 31px;
-  width: 150px
+  width: 150px;
+  &:hover{
+    color: colors.$turquoise;
+    background-color: colors.$white;
+  }
 }
 
 .nyhedsbrevButton{
