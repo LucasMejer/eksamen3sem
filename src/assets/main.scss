@@ -93,10 +93,82 @@ html, body {
 
 //Intro Video SCSS
 .introVideoDiv{
-
+  position: relative;
   img{
     display: block;
     width: 100%;
+    height: 35vw;
+    object-fit: cover;
+  }
+}
+
+.introTextDiv{
+  position: absolute;
+  margin: 10vw;
+  width: 100%;
+  color: colors.$white;
+  max-width: 50vw;
+  p{
+    max-width: 35vw;
+    font-size: 20px;
+  }
+}
+
+.introButtons{
+  display: flex;
+  width: 30vw;
+  justify-content: space-between;
+  button{
+    background-color: colors.$turquoise;
+    border-style: solid;
+    text-decoration: none;
+    width: 14vw;
+    height: 45px;
+    margin-top: 5px;
+    border-radius: 5px;
+    color: colors.$white;
+    border-width: 2px;
+    border-color: colors.$turquoise;
+  &:hover{
+    background-color: transparent;
+    color: colors.$turquoise;
+    a{
+      color: colors.$turquoise;
+    }
+  }
+  a{
+    text-decoration: none;
+    color: colors.$white;
+  }
+  }
+}
+
+.introOverskrift2{
+  color: colors.$turquoise;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 1024px){
+
+  .introVideoDiv{
+  img{
+    height: 40vw;
+  }
+  }
+
+  .introTextDiv{
+    margin: 5vw;
+    max-width: 75vw;
+    p{
+      max-width: 75vw;
+    }
+  }
+
+  .introButtons{
+    button{
+      height: 50px;
+    }
   }
 }
 
@@ -1016,6 +1088,9 @@ hr{
     .intro__text {
         width: 450px;
         margin: 20px 0 20px 0;
+        h2{
+        color: colors.$white;
+      }
     }
 
     .intro__section--first h1, .intro__section--second h1 {
@@ -1301,13 +1376,4 @@ hr{
   h2{
     color: colors.$black;
   }
-}
-
-.intro__omos{
-  display: flex;
-  justify-content: center;
-}
-
-.intro__omos--text{
-  width: 100%;
 }

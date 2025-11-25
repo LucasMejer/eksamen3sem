@@ -9,7 +9,7 @@
             </div>
             <div class="intro__omos--text">
               <h2>OM TEAMET</h2>
-              <p>Hos Moby Disc møder du et passioneret team af musikelskere, der deler glæden ved god lyd og gode oplevelser. Vi hjælper dig gerne med at finde den rette musik og give personlig vejledning.</p>
+              <p>Hos Moby Disc møder du et passioneret team af musikelskere, der deler glæden ved god musik og gode oplevelser. Vi hjælper dig gerne med at finde den rette musik og give personlig vejledning.</p>
               <p>Vores fælles kærlighed til musik skaber en varm og inspirerende atmosfære, hvor du altid er velkommen.</p>
             </div>
         </div>
