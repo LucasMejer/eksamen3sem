@@ -14,18 +14,20 @@
         <div class="sections__steps">
             <div class="content__steps">
                     <h2>Indholdsfortegnelse</h2>
-                    <button @click="scrollTo('install')">1. Installér programmer</button>
-                    <button @click="scrollTo('vue')">2. Opret Vue</button>
-                    <button @click="scrollTo('firebase')">3. Opret Firebase</button>
-                    <button @click="scrollTo('firebasevue')">4. Tilføj Firebase til Vue</button>
-                    <button @click="scrollTo('routing')">5. Opsæt routing</button>
-                    <button @click="scrollTo('komponenter')">6. Lav komponenter</button>
-                    <button @click="scrollTo('data')">7. Datafunktionalitet</button>
-                    <button @click="scrollTo('styling')">8. Styling og layout</button>
-                    <button @click="scrollTo('udvikling')">9. Udvikling af komponenter</button>
-                    <button @click="scrollTo('deploy')">10. Build og Deploy</button>
-                    <button @click="scrollTo('test')">11. Test og fejlfinding</button>
-                    <button @click="scrollTo('drift')">12. Drift og vedligeholdelse</button>
+                    <div class="buttons__grid">
+                        <button @click="scrollTo('install')">1. Installér programmer</button>
+                        <button @click="scrollTo('vue')">2. Opret Vue</button>
+                        <button @click="scrollTo('firebase')">3. Opret Firebase</button>
+                        <button @click="scrollTo('firebasevue')">4. Tilføj Firebase til Vue</button>
+                        <button @click="scrollTo('routing')">5. Opsæt routing</button>
+                        <button @click="scrollTo('komponenter')">6. Lav komponenter</button>
+                        <button @click="scrollTo('data')">7. Datafunktionalitet</button>
+                        <button @click="scrollTo('styling')">8. Styling og layout</button>
+                        <button @click="scrollTo('udvikling')">9. Udvikling af komponenter</button>
+                        <button @click="scrollTo('deploy')">10. Build og Deploy</button>
+                        <button @click="scrollTo('test')">11. Test og fejlfinding</button>
+                        <button @click="scrollTo('drift')">12. Drift og vedligeholdelse</button>
+                    </div>
             </div>
 
             <div class="first__step" id="install">
@@ -34,9 +36,11 @@
                     <p>Node bruges til at køre Vue-projekter og npm-kommandoer.</p>
                     <h3>1.2 Installér Vue CLI eller Vite</h3>
                     <p>Vite bruges til at oprette og køre Vue-projekter hurtigt og moderne.</p>
+                    <p>Vi har brugt Vue, fordi det gør det nemt at bygge en interaktiv og dynamisk side.</p>
                     <p>Kommando: npm create vite@latest</p>
                     <h3>1.3 Installér Firebase CLI</h3>
                     <p>Firebase CLI gør det muligt at logge ind, initialere og deploye projektet.</p>
+                    <p>Vi bruger Hosting, fordi siden er statisk, og almindelig hosting er enklere at implementere. Vi bruger Realtime Database, fordi vi har brug for hurtige realtidsopdateringer.</p>
                     <p>Kommando: npm install -g firebase-tools</p>
                     <h3>1.4 Opret Google-konto</h3>
                     <p>Firebase kræver en Google-konto for adgang til Console og Hosting.</p>

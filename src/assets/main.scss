@@ -1186,15 +1186,15 @@ hr{
     padding-left: 20px;
 }
 
-.content__steps h2 {
-  margin-left: 20px;
+.content__steps {
+  margin: 0 20px;
 }
 
-.content__steps button {
-  margin: 0 20px 20px 20px;
-  line-height: 1.5;
-  display: flex;
-  flex-direction: column;
+.buttons__grid {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 20px;
 }
 
 .first__step h3, .second__step h3 {
@@ -1205,6 +1205,7 @@ hr{
 
 .first__step p, .second__step p {
   margin-bottom: 10px;
+  width: 60%;
 }
 
 .first__step {
