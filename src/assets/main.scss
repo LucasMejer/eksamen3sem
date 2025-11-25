@@ -1088,6 +1088,9 @@ hr{
     .intro__text {
         width: 450px;
         margin: 20px 0 20px 0;
+        h2{
+        color: colors.$white;
+      }
     }
 
     .intro__section--first h1, .intro__section--second h1 {
@@ -1372,13 +1375,4 @@ hr{
   h2{
     color: colors.$black;
   }
-}
-
-.intro__omos{
-  display: flex;
-  justify-content: center;
-}
-
-.intro__omos--text{
-  width: 100%;
 }
