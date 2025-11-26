@@ -32,7 +32,7 @@
       <p>Søndag Lukket</p>
     </div>
     <div>
-      <img src="/mobydiscvinyls.jpg" alt="billeder af vinyler til kontaktinfo siden">
+      <img src="/mobydisc_front.jpg" alt="front af moby disc butikken i Odense">
     </div>
   </div>
 </template>
