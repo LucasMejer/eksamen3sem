@@ -56,7 +56,7 @@ function checkScreenSize() {
 <template>
   <h2 class="carouselHeader">MEST POPULÆRE PRODUKTER</h2>
   <div class="productsDiv">
-    <button v-on:click="prev" class="buttonLeft"></button>
+    <button v-on:click="prev" class="buttonLeft" aria-label="Scroll to the left"></button>
     <div class="carousel">
       <div class="inner" :style="{ transform: `translateX(-${currentIndex * (100 / visibleCount)}%)` }">
         <div class="card" v-for="vinyl in vinyls" :key="vinyl.key">
@@ -68,6 +68,6 @@ function checkScreenSize() {
         </div>
       </div>
     </div>
-    <button v-on:click="next" class="buttonRight"></button>
+    <button v-on:click="next" class="buttonRight" aria-label="Scroll to the right"></button>
   </div>
 </template>

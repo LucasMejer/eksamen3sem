@@ -16,4 +16,5 @@
     </div>
     <img src="/heroimage.png" alt="">
   </div>
+
 </template>

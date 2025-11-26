@@ -90,13 +90,13 @@ onMounted(() => {
 
             <div class="shop__logos">
                 <div class="logo__cart">
-                    <a href="#" class="fa-solid fa-magnifying-glass"></a>
+                    <a href="#" class="fa-solid fa-magnifying-glass" aria-label="Kurv"></a>
                 </div>
                 <div class="logo__search">
-                    <a href="#" class="fa-solid fa-cart-shopping"></a>
+                    <a href="#" class="fa-solid fa-cart-shopping" aria-label="Search"></a>
                 </div>
                 <div class="logo__user">
-                    <a href="#" class="fa-solid fa-user"></a>
+                    <a href="#" class="fa-solid fa-user" aria-label="Min Bruger"></a>
                 </div>
             </div>
         </div>
