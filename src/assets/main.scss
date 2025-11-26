@@ -557,6 +557,9 @@ hr{
   a{
     color: colors.$white;
     text-decoration: none;
+    &:hover {
+      color: colors.$turquoise;
+    }
   }
 }
 
@@ -1329,15 +1332,33 @@ hr{
   line-height: 1.5;
 }
 
-.faq__boxes h3 {
-  font-size: 20px;
-  text-decoration: underline;
-}
+.faq__section h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+
 
 .faq__boxes {
     display: grid;
-    grid-template-columns: 200px 200px;
-    grid-row: auto auto;
+    grid-template-columns: repeat(2, 600px);
+    gap: 100px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.faq__boxes h3 {
+  font-size: 20px;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.contact {
+  margin-top: 50px;
+  p {
+    margin-left: 110px;
+  }
 }
 
 //Nyhedsbrev Bar Forside
