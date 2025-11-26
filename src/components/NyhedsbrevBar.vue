@@ -39,7 +39,7 @@ async function sendMail(){
         <div class="nyhedsbrevBarDiv">
             <div class="nyhedsbrevBarInputDiv">
                 <input type="text" placeholder="Skriv din e-mail her..." class="emailInput" v-model="mail">
-                <button class="nyhedsbrevButton" v-on:click="sendMail">TILMELD DIG</button>
+                <button aria-label="knap til tilmeld dig" class="nyhedsbrevButton" v-on:click="sendMail">TILMELD DIG</button>
                 <p class="nyhedsbrevOverskrift" v-if="erTilmeldt">
                   Du er nu tilmeldt!
                 </p>

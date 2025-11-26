@@ -86,7 +86,7 @@ onMounted(() => {
         </div>
 
         <div class="name__moby">
-            <img src="/mobydisc_horizontal_black.png" alt="logo til forside øverst nav bar moby disc">
+            <img src="/mobydisc_horizontal_black.png" fetchpriority="high" alt="logo til forside øverst nav bar moby disc">
 
             <div class="shop__logos">
                 <div class="logo__cart">

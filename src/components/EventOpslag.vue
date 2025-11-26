@@ -148,7 +148,7 @@ function annullerButton(){
 
   <hr class="eventhr" />
   <div class="eventOpslagDiv">
-    <img src="/mikeandersen.png" alt="">
+    <img src="/mikeandersen.png" alt="billede af mike andersen som billede til event">
     <div class="eventTekstDiv">
       <h2>Mike Andersen Instore Koncert & Album Release</h2>
       <p class="eventAdresse">Nørrebrogade 5C, 7100 Vejle, Danmark</p>
@@ -179,7 +179,7 @@ function annullerButton(){
 
   <hr class="eventhr" />
   <div class="eventOpslagDiv">
-    <img src="/jacobaksglaede.png" alt="">
+    <img src="/jacobaksglaede.png" alt="billede af jacob aksglaede som billede til event">
     <div class="eventTekstDiv">
       <h2>Jacob Aksglæde Instore Koncert & Album Release</h2>
       <p class="eventAdresse">Sankt Knuds Kirkestr. 2A, 5000 Odense, Denmark</p>
@@ -207,7 +207,7 @@ function annullerButton(){
 
   <hr class="eventhr" />
   <div class="eventOpslagDiv">
-    <img src="/lagersalg.png" alt="">
+    <img src="/lagersalg.png" alt="billede af lagersalg produkter som billede til event">
     <div class="eventTekstDiv">
       <h2>Lagersalg på vestrebro</h2>
       <p class="eventAdresse">Vesterbro 13, 5000 Odense C</p>
