@@ -38,8 +38,8 @@ const router = createRouter({
       component: () => import('../views/EventsView.vue'),
     },
     {
-      path: '/afmelding',
-      name: 'afmelding',
+      path: '/brugermanual',
+      name: 'brugermanual',
       component: () => import('../views/MisapplyView.vue'),
     },
     {
