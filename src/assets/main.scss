@@ -541,7 +541,6 @@ hr{
   }
 }
 
-
 .guideButton {
   color: colors.$white;
   background-color: colors.$turquoise;
@@ -1294,7 +1293,7 @@ hr{
     display: flex;
     flex-direction: row;
     gap: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .first__step h3, .second__step h3 {
@@ -1310,7 +1309,7 @@ hr{
 
 .first__step {
     background-color: colors.$grey-dark;
-    padding: 10px 0 10px 0;
+    padding: 20px 0 20px 0;
     width: 100%;
 }
 
@@ -1321,7 +1320,7 @@ hr{
 }
 
 .second__step {
-  padding: 10px 0 10px 0;
+  padding: 20px 0 20px 0;
   width: 100%;
 }
 
