@@ -32,7 +32,7 @@
       <p>Søndag Lukket</p>
     </div>
     <div>
-      <img src="/vinylStoreVinyls.jpg" alt="">
+      <img src="/mobydiscvinyls.jpg" alt="">
     </div>
   </div>
 </template>

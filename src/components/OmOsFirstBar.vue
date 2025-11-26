@@ -5,7 +5,7 @@
     <div class="intro__omos">
         <div class="intro__section">
             <div class="intro__picture--second">
-                <img src="/vinylStoreVinyls.jpg" alt="Moby Disc butik i Odense front billede">
+                <img src="/mobydiscvinyls.jpg" alt="Moby Disc butik i Odense front billede">
             </div>
             <div class="intro__omos--text">
               <h2>VORES HISTORIE</h2>
