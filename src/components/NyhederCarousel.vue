@@ -2,12 +2,12 @@
 import { onMounted, ref } from "vue"
 
 const vinyls = [
-  {name:"Imaginal Disk (Indie Exclusive Edition) - 2LP (Hvid Vinyl)", artist:"Magdalena Bay", src:"/magdalenabay.png", key:"vinyl-1", price:"679,95 DKK"},
-  {name:"Run The Jewels - 2LP (Split-Farvet Vinyl)", artist:"Run The Jewels", src:"/runthejewels.png", key:"vinyl-2", price:"329,95 DKK"},
+  {name:"Imaginal Disk (Indie Exclusive Edition) - 2LP (Hvid Vinyl)", artist:"Magdalena Bay", src:"/magdalenabay.jpg", key:"vinyl-1", price:"679,95 DKK"},
+  {name:"Run The Jewels - 2LP (Split-Farvet Vinyl)", artist:"Run The Jewels", src:"/runthejewels.jpg", key:"vinyl-2", price:"329,95 DKK"},
   {name:"Faces - 3LP (Gul Vinyl)", artist:"Mac Miller", src:"/macmiller.jpg", key:"vinyl-3", price:"499,95 DKK"},
-  {name:"Melt My Eyez, See Your Future - CD", artist:"Denzel Curry", src:"/denzelcurry.png", key:"vinyl-4", price:"129,95 DKK"},
-  {name:"Wlfgrl (10+ Anniversary Edition) - 2LP", artist:"Machine Girl", src:"/machinegirl.png", key:"vinyl-5", price:"319,95 DKK"},
-  {name:"The Crux - LP", artist:"Djo", src:"/djo.png", key:"vinyl-6", price:"189,95 DKK"}
+  {name:"Melt My Eyez, See Your Future - CD", artist:"Denzel Curry", src:"/denzelcurry.jpg", key:"vinyl-4", price:"129,95 DKK"},
+  {name:"Wlfgrl (10+ Anniversary Edition) - 2LP", artist:"Machine Girl", src:"/machinegirl.jpg", key:"vinyl-5", price:"319,95 DKK"},
+  {name:"The Crux - LP", artist:"Djo", src:"/djo.jpg", key:"vinyl-6", price:"189,95 DKK"}
 ]
 
 // How far we've slid
