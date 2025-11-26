@@ -535,9 +535,12 @@ hr{
 
 .guide__tilmelding {
   display: flex;
-  flex-direction: row;
-  gap: 15px;
+  flex-direction: column;
+  p{
+    margin-bottom: 5px;
+  }
 }
+
 
 .guideButton {
   color: colors.$white;
@@ -547,9 +550,14 @@ hr{
   border-radius: 5px;
   height: 31px;
   width: 150px;
+  margin-bottom: 35px;
   &:hover{
     color: colors.$turquoise;
     background-color: colors.$white;
+  }
+  a{
+    color: colors.$white;
+    text-decoration: none;
   }
 }
 
@@ -993,6 +1001,7 @@ hr{
         display: flex;
         align-items: center;
         gap: 2px;
+        margin-right: 110px;
     }
 
     .navbar__info div {

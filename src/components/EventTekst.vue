@@ -50,7 +50,8 @@ async function sendMail(){
     <h4>Har du brug for <span style="font-size: bold; color:#F9B333">hjælp</span> til at tilmelde dig et event, så klik på knappen her og få en step for step guide.</h4>
     <div class="guide__tilmelding">
       <p>Guide til til- og afmelding af events</p>
-      <button class="guideButton">Se Guide</button>
+      <button class="guideButton"><router-link to="/brugermanual" tag="button">BRUGERMANUAL</router-link></button>
+      <!--<button class="guideButton" router-link><router-link to="/brugermanual"</router-link>Se Guide</button>-->
     </div>
 
     <span class="nyhedsbrevOverskrift">
