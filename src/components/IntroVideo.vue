@@ -11,10 +11,10 @@
       <br>
       <div class="introButtons">
         <button>UDFORSK PRODUKTER</button>
-        <button><router-link to="/events">UPCOMING EVENTS</router-link></button>
+        <button><router-link aria-label="Upcoming events knap brugt flere steder" to="/events">UPCOMING EVENTS</router-link></button>
       </div>
     </div>
-    <img src="/heroimage.jpg" alt="">
+    <img src="/heroimage.jpg" fetchpriority="high" alt="hero billede af butikkens produkter som det første og største billede på siden">
   </div>
 
 </template>

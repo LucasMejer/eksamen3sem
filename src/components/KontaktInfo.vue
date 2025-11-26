@@ -32,7 +32,7 @@
       <p>Søndag Lukket</p>
     </div>
     <div>
-      <img src="/mobydiscvinyls.jpg" alt="">
+      <img src="/mobydiscvinyls.jpg" alt="billeder af vinyler til kontaktinfo siden">
     </div>
   </div>
 </template>
