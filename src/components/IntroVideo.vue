@@ -14,7 +14,7 @@
         <button><router-link to="/events">UPCOMING EVENTS</router-link></button>
       </div>
     </div>
-    <img src="/heroimage.png" alt="">
+    <img src="/heroimage.jpg" alt="">
   </div>
 
 </template>
