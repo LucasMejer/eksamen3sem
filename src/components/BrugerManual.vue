@@ -62,6 +62,7 @@
                     <p>Kommando: npm run dev</p>
                     <h3>2.4 Opsætning af komponentmappestruktur</h3>
                     <p>Organiserer komponenter og views i en logisk mappestruktur.</p>
+                    <img src="/componentsPicture.png" alt="komponenter opsat i orden under components-mappen">
             </div>
 
             <div class="first__step" id="firebase">
@@ -74,32 +75,34 @@
                 <p>Gennemgår hvilke filer, der bør versionsstyres, og hvilke der ikke skal.</p>
             </div>
 
-            <div class="second__step" id="firebasevue">
-                <h2>4. Tilføj Firebase til Vue</h2>
-                <h3>4.1 Log in i Firebase</h3>
-                <p>Forbinder terminalen til Firebase-kontoen.</p>
-                <p>Kommando: firebase login og aktivér Firebase Console</p>
-                <h3>4.2 Opret nyt Firebase projekt</h3>
-                <p>Laves i Firebase Console, og bruges som backend for Vue-projektet.</p>
-                <h3>4.3 Aktiver Firebase Hosting</h3>
-                <p>Gør det muligt at hoste Vue-projektet online.</p>
-                <h3>4.4 Aktiver Firebase Database</h3>
-                <p>Realtime Database bruges til at gemme og hente data fra projektet.</p>
+            <div class="second__step" id="firebasevue"> 
+                    <h2>4. Tilføj Firebase til Vue</h2>
+                    <h3>4.1 Log in i Firebase</h3>
+                    <p>Forbinder terminalen til Firebase-kontoen.</p>
+                    <p>Kommando: firebase login og aktivér Firebase Console</p>
+                    <h3>4.2 Opret nyt Firebase projekt</h3>
+                    <p>Laves i Firebase Console, og bruges som backend for Vue-projektet.</p>
+                    <h3>4.3 Aktiver Firebase Hosting</h3>
+                    <p>Gør det muligt at hoste Vue-projektet online.</p>
+                    <h3>4.4 Aktiver Firebase Database</h3>
+                    <p>Realtime Database bruges til at gemme og hente data fra projektet.</p>
+                <img src="/eventsDatabase.png" alt="eksempel på database i Firebase">
             </div>
 
             <div class="first__step" id="routing">
-                <h2>5. Opsæt routing i Vue</h2>
-                <h3>5.1 Installér Firebase i Vue</h3>
-                <p>Installerer Firebase-pakken som giver adgang til hosting og database.</p>
-                <p>Kommando: npm install firebase</p>
-                <h3>5.2 Opret firebase.js i /src mappen</h3>
-                <p>En fil hvor Firebase appen initialeres og eksporteres.</p>
-                <h3>5.3 Indsæt Firebase credentials</h3>
-                <p>Kopier dit projekt til API-nøgler og konfiguration fra Firebase Console.</p>
-                <h3>5.4 Initialisér Firebase App</h3>
-                <p>Starter Firebase i projektet så database og hosting kan bruges.</p>
-                <h3>5.5 Eksportér Firebase database</h3>
-                <p>Gør databasen tilgængelig i dine komponenter.</p>
+                    <h2>5. Opsæt routing i Vue</h2>
+                    <h3>5.1 Installér Firebase i Vue</h3>
+                    <p>Installerer Firebase-pakken som giver adgang til hosting og database.</p>
+                    <p>Kommando: npm install firebase</p>
+                    <h3>5.2 Opret firebase.js i /src mappen</h3>
+                    <p>En fil hvor Firebase appen initialeres og eksporteres.</p>
+                    <h3>5.3 Indsæt Firebase credentials</h3>
+                    <p>Kopier dit projekt til API-nøgler og konfiguration fra Firebase Console.</p>
+                    <h3>5.4 Initialisér Firebase App</h3>
+                    <p>Starter Firebase i projektet så database og hosting kan bruges.</p>
+                    <h3>5.5 Eksportér Firebase database</h3>
+                    <p>Gør databasen tilgængelig i dine komponenter.</p>
+                <img src="/routingExp.png" alt="de forskellige links sat op til routing i en index.js">
             </div>
 
             <div class="second__step" id="komponenter">
@@ -130,17 +133,18 @@
             </div>
 
             <div class="second__step" id="styling">
-                <h2>8. Tilføj styling og layout</h2>
-                <h3>8.1 Opret SCSS struktur</h3>
-                <p>Opdel styling i globale filer og komponentfiler.</p>
-                <h3>8.2 Brug af globale styles</h3>
-                <p>Definer generelle farver, fonte og reset CSS ét sted.</p>
-                <h3>8.3 Brug af komponentbaseret styling</h3>
-                <p>Hver .vue-fil har sin egen scoped styling.</p>
-                <h3>8.4 Implementering af responsivt design</h3>
-                <p>Sikrer layout fungerer på både mobil og desktop.</p>
-                <h3>8.5 Brug af font libraries og ikoner</h3>
-                <p>Tilføjer typografi og ikoner via fx Google Fonts og Font Awesome.</p>
+                    <h2>8. Tilføj styling og layout</h2>
+                    <h3>8.1 Opret SCSS struktur</h3>
+                    <p>Opdel styling i globale filer og komponentfiler.</p>
+                    <h3>8.2 Brug af globale styles</h3>
+                    <p>Definer generelle farver, fonte og reset CSS ét sted.</p>
+                    <h3>8.3 Brug af komponentbaseret styling</h3>
+                    <p>Hver .vue-fil har sin egen scoped styling.</p>
+                    <h3>8.4 Implementering af responsivt design</h3>
+                    <p>Sikrer layout fungerer på både mobil og desktop.</p>
+                    <h3>8.5 Brug af font libraries og ikoner</h3>
+                    <p>Tilføjer typografi og ikoner via fx Google Fonts og Font Awesome.</p>
+                <img src="/cssFiles.png" alt="hvordan farver er sat op i css som et seperat dokument udover den originale css-fil">
             </div>
 
             <div class="first__step" id="udvikling">

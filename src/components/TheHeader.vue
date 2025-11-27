@@ -107,12 +107,12 @@ onMounted(() => {
     <nav class="navbar__menu">
         <div class="link__sites">
             <ul class="nav__links--first">
-                <li><router-link to="/" class="router-link-active">FORSIDE</router-link></li>
-                <li><router-link to="/cd">VINYL</router-link></li>
-                <li><router-link to="/cd">CD</router-link></li>
-                <li><router-link to="/cd">FILM</router-link></li>
-                <li><router-link to="/cd">TILBEHØR</router-link></li>
-                <li><router-link to="/cd">FORUDBESTILLING</router-link></li>
+                <router-link to="/"><li>FORSIDE</li></router-link>
+                <router-link to="/cd"><li>VINYL</li></router-link>
+                <router-link to="/cd"><li>CD</li></router-link>
+                <router-link to="/cd"><li>FILM</li></router-link>
+                <router-link to="/cd"><li>TILBEHØR</li></router-link>
+                <router-link to="/cd"><li>FORUDBESTILLING</li></router-link>
             </ul>
 
             <ul class="nav__links--second">

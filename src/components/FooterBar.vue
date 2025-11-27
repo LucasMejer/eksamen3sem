@@ -1,4 +1,6 @@
 <script setup>
+import router from '@/router';
+
 
 </script>
 
@@ -70,24 +72,25 @@
                     <div class="footer__content">
                         <h4>KATEGORIER</h4>
                         <li>
-                            <a href="#">Vinyl</a>
-                            <a href="#">CD</a>
-                            <a href="#">Film</a>
-                            <a href="#">Tilbehør</a>
-                            <a href="#">Forudbestilling</a>
-                            <a href="#">Om os</a>
-                            <a href="#">Events</a>
-                            <a href="#">Kontakt</a>
+                            <router-link to="/">Forside</router-link>
+                            <router-link to="/cd">Vinyl</router-link>
+                            <router-link to="/cd">CD</router-link>
+                            <router-link to="/cd">Film</router-link>
+                            <router-link to="/cd">Tilbehør</router-link>
+                            <router-link to="/cd">Forudbestilling</router-link>
+                            <router-link to="/omos">Om os</router-link>
+                            <router-link to="/events">Events</router-link>
+                            <router-link to="/kontakt">Kontakt</router-link>
                         </li>
                     </div>
                     <div class="footer__content">
                         <h4>GUIDE OG HJÆLP</h4>
                         <li>
-                            <a href="#">Forsendelse</a> 
-                            <a href="#">Handelsbetingelser</a> 
-                            <a href="#">Privatpolitik</a> 
-                            <a href="#">Reklamation</a> 
-                            <a href="#">Returnering</a> 
+                            <router-link to="/cd">Forsendelse</router-link> 
+                            <router-link to="/cd">Handelsbetingelser</router-link> 
+                            <router-link to="/cd">Privatpolitik</router-link> 
+                            <router-link to="/cd">Reklamation</router-link> 
+                            <router-link to="/cd">Returnering</router-link> 
                         </li>
                     </div>
 
@@ -99,9 +102,9 @@
                             Skt. Knuds Kirkestræde 2A
                             <br>
                             5000 Odense C</p>
-                            <a href="#">+45 61 14 41 48</a>
+                            <router-link to="/cd">+45 61 14 41 48</router-link>
                             <br>
-                            <a href="#">post@moby-disc.dk</a>
+                            <router-link to="/cd">post@moby-disc.dk</router-link>
                             <p>CVR nr. 33809530</p>
                         </div>
 
